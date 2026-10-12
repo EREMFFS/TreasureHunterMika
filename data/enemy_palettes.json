@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "mode": "runtime_canvas_palette",
+  "renderer": "enemy_palette.js",
+  "variants": {
+    "hobgoblin": {
+      "family": "goblin",
+      "source": {
+        "hue_ranges": [
+          [
+            48,
+            100
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 282,
+        "saturation_scale": 1,
+        "value_scale": 0.98
+      }
+    },
+    "death_goblin": {
+      "family": "goblin",
+      "source": {
+        "hue_ranges": [
+          [
+            48,
+            100
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 3,
+        "saturation_scale": 1.1,
+        "value_scale": 1
+      }
+    },
+    "dark_goblin": {
+      "family": "goblin",
+      "source": {
+        "hue_ranges": [
+          [
+            48,
+            100
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 250,
+        "saturation_scale": 0.22,
+        "value_scale": 0.43
+      }
+    },
+    "ograst": {
+      "family": "ogre",
+      "source": {
+        "hue_ranges": [
+          [
+            190,
+            245
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 49,
+        "saturation_scale": 1,
+        "value_scale": 1
+      }
+    },
+    "big_ogre": {
+      "family": "ogre",
+      "source": {
+        "hue_ranges": [
+          [
+            190,
+            245
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 323,
+        "saturation_scale": 0.8,
+        "value_scale": 1.1
+      }
+    },
+    "ogyar": {
+      "family": "ogre",
+      "source": {
+        "hue_ranges": [
+          [
+            190,
+            245
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 3,
+        "saturation_scale": 1,
+        "value_scale": 1
+      }
+    },
+    "hill_gigas": {
+      "family": "gigas",
+      "source": {
+        "hue_ranges": [
+          [
+            34,
+            65
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 112,
+        "saturation_scale": 0.9,
+        "value_scale": 0.92
+      }
+    },
+    "yor_gigas": {
+      "family": "gigas",
+      "source": {
+        "hue_ranges": [
+          [
+            34,
+            65
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 24,
+        "saturation_scale": 1.1,
+        "value_scale": 1
+      }
+    },
+    "papa_gigas": {
+      "family": "gigas",
+      "source": {
+        "hue_ranges": [
+          [
+            34,
+            65
+          ]
+        ],
+        "min_s": 0.28,
+        "min_v": 0.12
+      },
+      "target": {
+        "hue": 3,
+        "saturation_scale": 1.05,
+        "value_scale": 0.95
+      }
+    }
+  },
+  "family_assets": {
+    "goblin": [
+      "goblin_airborne.png",
+      "goblin_battle_hammer_00.png",
+      "goblin_battle_hammer_01.png",
+      "goblin_battle_hammer_02.png",
+      "goblin_battle_hammer_03.png",
+      "goblin_battle_hammer_sheet.png",
+      "goblin_downed.png",
+      "goblin_flamethrower_00.png",
+      "goblin_flamethrower_01.png",
+      "goblin_flamethrower_02.png",
+      "goblin_flamethrower_03.png",
+      "goblin_flamethrower_sheet.png",
+      "goblin_getup_00.png",
+      "goblin_getup_01.png",
+      "goblin_getup_02.png",
+      "goblin_getup_sheet.png",
+      "goblin_grabbed.png",
+      "goblin_gungnir_00.png",
+      "goblin_gungnir_01.png",
+      "goblin_gungnir_02.png",
+      "goblin_gungnir_03.png",
+      "goblin_gungnir_sheet.png",
+      "goblin_helmet_base_00.png",
+      "goblin_helmet_base_01.png",
+      "goblin_helmet_base_02.png",
+      "goblin_helmet_base_03.png",
+      "goblin_helmet_base_04.png",
+      "goblin_helmet_base_05.png",
+      "goblin_helmet_base_sheet.png",
+      "goblin_helmet_getup_00.png",
+      "goblin_helmet_getup_01.png",
+      "goblin_helmet_getup_02.png",
+      "goblin_helmet_getup_sheet.png",
+      "goblin_helmet_katana_00.png",
+      "goblin_helmet_katana_01.png",
+      "goblin_helmet_katana_02.png",
+      "goblin_helmet_katana_03.png",
+      "goblin_helmet_katana_sheet.png",
+      "goblin_helmet_walk_00.png",
+      "goblin_helmet_walk_01.png",
+      "goblin_helmet_walk_02.png",
+      "goblin_helmet_walk_03.png",
+      "goblin_helmet_walk_04.png",
+      "goblin_helmet_walk_05.png",
+      "goblin_helmet_walk_sheet.png",
+      "goblin_idle_00.png",
+      "goblin_idle_01.png",
+      "goblin_katana_00.png",
+      "goblin_katana_01.png",
+      "goblin_katana_02.png",
+      "goblin_katana_03.png",
+      "goblin_katana_sheet.png",
+      "goblin_knee_hit.png",
+      "goblin_knee_hit_normal.png",
+      "goblin_machinegun_00.png",
+      "goblin_machinegun_01.png",
+      "goblin_machinegun_02.png",
+      "goblin_machinegun_sheet.png",
+      "goblin_punch_00.png",
+      "goblin_punch_01.png",
+      "goblin_punch_02.png",
+      "goblin_punch_03.png",
+      "goblin_punch_sheet.png",
+      "goblin_rocket_launcher_00.png",
+      "goblin_rocket_launcher_01.png",
+      "goblin_rocket_launcher_02.png",
+      "goblin_rocket_launcher_sheet.png",
+      "goblin_rocket_punch_00.png",
+      "goblin_rocket_punch_01.png",
+      "goblin_rocket_punch_02.png",
+      "goblin_rocket_punch_03.png",
+      "goblin_rocket_punch_sheet.png",
+      "goblin_sheet.png",
+      "goblin_walk_00.png",
+      "goblin_walk_01.png",
+      "goblin_walk_02.png",
+      "goblin_walk_03.png",
+      "goblin_walk_04.png",
+      "goblin_walk_05.png",
+      "goblin_walk_sheet.png",
+      "goblin_war_axe_00.png",
+      "goblin_war_axe_01.png",
+      "goblin_war_axe_02.png",
+      "goblin_war_axe_03.png",
+      "goblin_war_axe_04.png",
+      "goblin_war_axe_sheet.png",
+      "goblin_wave_cannon_00.png",
+      "goblin_wave_cannon_01.png",
+      "goblin_wave_cannon_02.png",
+      "goblin_wave_cannon_03.png",
+      "goblin_wave_cannon_sheet.png",
+      "goblin_yoichi_bow_00.png",
+      "goblin_yoichi_bow_01.png",
+      "goblin_yoichi_bow_02.png",
+      "goblin_yoichi_bow_03.png",
+      "goblin_yoichi_bow_04.png",
+      "goblin_yoichi_bow_sheet.png"
+    ],
+    "ogre": [
+      "ogre_damage_00.png",
+      "ogre_damage_01.png",
+      "ogre_damage_sheet.png",
+      "ogre_getup_00.png",
+      "ogre_getup_01.png",
+      "ogre_getup_sheet.png",
+      "ogre_guard_00.png",
+      "ogre_guard_01.png",
+      "ogre_guard_sheet.png",
+      "ogre_idle_00.png",
+      "ogre_idle_01.png",
+      "ogre_idle_sheet.png",
+      "ogre_knockback_00.png",
+      "ogre_knockback_01.png",
+      "ogre_knockback_sheet.png",
+      "ogre_punch_00.png",
+      "ogre_punch_01.png",
+      "ogre_punch_02.png",
+      "ogre_punch_03.png",
+      "ogre_punch_sheet.png",
+      "ogre_size_comparison.png",
+      "ogre_walk_00.png",
+      "ogre_walk_01.png",
+      "ogre_walk_02.png",
+      "ogre_walk_03.png",
+      "ogre_walk_04.png",
+      "ogre_walk_05.png",
+      "ogre_walk_sheet.png",
+      "ogre_war_axe_00.png",
+      "ogre_war_axe_01.png",
+      "ogre_war_axe_02.png",
+      "ogre_war_axe_03.png",
+      "ogre_war_axe_04.png",
+      "ogre_war_axe_05.png",
+      "ogre_war_axe_sheet.png",
+      "ogre_yoichi_bow_00.png",
+      "ogre_yoichi_bow_01.png",
+      "ogre_yoichi_bow_02.png",
+      "ogre_yoichi_bow_03.png",
+      "ogre_yoichi_bow_04.png",
+      "ogre_yoichi_bow_05.png",
+      "ogre_yoichi_bow_sheet.png"
+    ],
+    "gigas": [
+      "gigas_charge_00.png",
+      "gigas_charge_01.png",
+      "gigas_charge_02.png",
+      "gigas_charge_03.png",
+      "gigas_charge_04.png",
+      "gigas_charge_05.png",
+      "gigas_charge_sheet.png",
+      "gigas_damage_00.png",
+      "gigas_damage_01.png",
+      "gigas_damage_sheet.png",
+      "gigas_getup_00.png",
+      "gigas_getup_01.png",
+      "gigas_getup_sheet.png",
+      "gigas_idle_00.png",
+      "gigas_idle_01.png",
+      "gigas_idle_sheet.png",
+      "gigas_knockback_00.png",
+      "gigas_knockback_01.png",
+      "gigas_knockback_sheet.png",
+      "gigas_punch_00.png",
+      "gigas_punch_01.png",
+      "gigas_punch_02.png",
+      "gigas_punch_03.png",
+      "gigas_punch_sheet.png",
+      "gigas_reactions_sheet.png",
+      "gigas_size_comparison.png",
+      "gigas_walk_00.png",
+      "gigas_walk_01.png",
+      "gigas_walk_02.png",
+      "gigas_walk_03.png",
+      "gigas_walk_sheet.png"
+    ]
+  },
+  "coverage": "all supplied family PNGs; applies equally to loose frames and sheets, including weapons and new goblin motions",
+  "limitations": [
+    "Hue based palette may also recolor accessories sharing skin hue. Keep eyes/alpha/outline by saturation and brightness filtering.",
+    "No separate pre-rendered color-variant PNG set. Claude must integrate the provided adapter or equivalent shader.",
+    "Palette colors are an initial proposal requiring in-game review."
+  ],
+  "cache_key": "enemy_id + source asset path; build after decode, never on every frame"
+}

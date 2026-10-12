@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "sheet": "hud/enemy_faces_sheet.png",
+  "cell_size": [
+    24,
+    24
+  ],
+  "enemies": {
+    "goblin": {
+      "file": "hud/enemy_face_goblin.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "hobgoblin": {
+      "file": "hud/enemy_face_hobgoblin.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        24,
+        0,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "death_goblin": {
+      "file": "hud/enemy_face_death_goblin.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        48,
+        0,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "dark_goblin": {
+      "file": "hud/enemy_face_dark_goblin.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        72,
+        0,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "skeleton": {
+      "file": "hud/enemy_face_skeleton.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        0,
+        24,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "ogre": {
+      "file": "hud/enemy_face_ogre.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "ograst": {
+      "file": "hud/enemy_face_ograst.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        48,
+        24,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "big_ogre": {
+      "file": "hud/enemy_face_big_ogre.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        72,
+        24,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "ogyar": {
+      "file": "hud/enemy_face_ogyar.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        0,
+        48,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "gigas": {
+      "file": "hud/enemy_face_gigas.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        24,
+        48,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "hill_gigas": {
+      "file": "hud/enemy_face_hill_gigas.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        48,
+        48,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "yor_gigas": {
+      "file": "hud/enemy_face_yor_gigas.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        72,
+        48,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "papa_gigas": {
+      "file": "hud/enemy_face_papa_gigas.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        0,
+        72,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "deathhound": {
+      "file": "hud/enemy_face_deathhound.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        24,
+        72,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    },
+    "goblin_robot": {
+      "file": "hud/enemy_face_goblin_robot.png",
+      "canvas": [
+        24,
+        24
+      ],
+      "atlas_rect": [
+        48,
+        72,
+        24,
+        24
+      ],
+      "anchor": "top_left",
+      "mirror_with_facing": false
+    }
+  },
+  "weapon_variants": "Use the same enemy_id portrait; helmet/headwear portraits not added",
+  "aliases": {
+    "hob_goblin": "hobgoblin",
+    "deathgoblin": "death_goblin",
+    "darkgoblin": "dark_goblin",
+    "hillgigas": "hill_gigas",
+    "yorgigas": "yor_gigas",
+    "papagigas": "papa_gigas"
+  },
+  "gameplay_implemented": false
+}

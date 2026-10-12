@@ -1,0 +1,442 @@
+{
+  "source": "design_items.xlsx / 宝箱",
+  "trigger": "undecided",
+  "sampling_with_replacement": "proposal",
+  "gameplay_implemented": false,
+  "tiers": [
+    {
+      "id": "weak",
+      "name": "弱い箱",
+      "draws": 2,
+      "weight_total": 120,
+      "weighted_items": [
+        {
+          "name": "ドル袋",
+          "weight": 20,
+          "score": 1000,
+          "effect": "点数"
+        },
+        {
+          "name": "札束",
+          "weight": 10,
+          "score": 10000,
+          "effect": "点数"
+        },
+        {
+          "name": "指輪",
+          "weight": 20,
+          "score": 2000,
+          "effect": "点数"
+        },
+        {
+          "name": "宝石",
+          "weight": 10,
+          "score": 3000,
+          "effect": "点数"
+        },
+        {
+          "name": "ブレスレット",
+          "weight": 10,
+          "score": 4000,
+          "effect": "点数"
+        },
+        {
+          "name": "ゲームソフト",
+          "weight": 10,
+          "score": 5000,
+          "effect": "点数"
+        },
+        {
+          "name": "チョコレート",
+          "weight": 20,
+          "score": 100,
+          "effect": "HP5%回復"
+        },
+        {
+          "name": "りんご",
+          "weight": 20,
+          "score": 200,
+          "effect": "HP10%回復"
+        }
+      ],
+      "canvas": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        47
+      ],
+      "phases": [
+        "closed",
+        "half_open",
+        "open"
+      ],
+      "sheet": "chest_weak_sheet.png"
+    },
+    {
+      "id": "good",
+      "name": "いい箱",
+      "draws": 2,
+      "weight_total": 240,
+      "weighted_items": [
+        {
+          "name": "ドル袋",
+          "weight": 10,
+          "score": 1000,
+          "effect": "点数"
+        },
+        {
+          "name": "札束",
+          "weight": 20,
+          "score": 10000,
+          "effect": "点数"
+        },
+        {
+          "name": "スーツケース",
+          "weight": 5,
+          "score": 100000,
+          "effect": "点数"
+        },
+        {
+          "name": "指輪",
+          "weight": 20,
+          "score": 2000,
+          "effect": "点数"
+        },
+        {
+          "name": "宝石",
+          "weight": 30,
+          "score": 3000,
+          "effect": "点数"
+        },
+        {
+          "name": "ブレスレット",
+          "weight": 30,
+          "score": 4000,
+          "effect": "点数"
+        },
+        {
+          "name": "ネックレス",
+          "weight": 30,
+          "score": 7000,
+          "effect": "点数"
+        },
+        {
+          "name": "金の彫像",
+          "weight": 30,
+          "score": 8000,
+          "effect": "点数"
+        },
+        {
+          "name": "王冠",
+          "weight": 5,
+          "score": 20000,
+          "effect": "点数"
+        },
+        {
+          "name": "ゲームソフト",
+          "weight": 10,
+          "score": 5000,
+          "effect": "点数"
+        },
+        {
+          "name": "ゲーム機",
+          "weight": 5,
+          "score": 15000,
+          "effect": "点数"
+        },
+        {
+          "name": "りんご",
+          "weight": 20,
+          "score": 200,
+          "effect": "HP10%回復"
+        },
+        {
+          "name": "ポーション",
+          "weight": 10,
+          "score": 500,
+          "effect": "HP25%回復"
+        },
+        {
+          "name": "ハイポーション",
+          "weight": 10,
+          "score": 1000,
+          "effect": "HP50％回復"
+        },
+        {
+          "name": "エリクサー",
+          "weight": 5,
+          "score": 5000,
+          "effect": "HP100％回復"
+        }
+      ],
+      "canvas": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        47
+      ],
+      "phases": [
+        "closed",
+        "half_open",
+        "open"
+      ],
+      "sheet": "chest_good_sheet.png"
+    },
+    {
+      "id": "high",
+      "name": "高給な箱",
+      "draws": 2,
+      "weight_total": 149,
+      "weighted_items": [
+        {
+          "name": "札束",
+          "weight": 30,
+          "score": 10000,
+          "effect": "点数"
+        },
+        {
+          "name": "スーツケース",
+          "weight": 5,
+          "score": 100000,
+          "effect": "点数"
+        },
+        {
+          "name": "金の彫像",
+          "weight": 30,
+          "score": 8000,
+          "effect": "点数"
+        },
+        {
+          "name": "王冠",
+          "weight": 10,
+          "score": 20000,
+          "effect": "点数"
+        },
+        {
+          "name": "ダイヤモンド",
+          "weight": 10,
+          "score": 25000,
+          "effect": "点数"
+        },
+        {
+          "name": "ゲームソフト",
+          "weight": 30,
+          "score": 5000,
+          "effect": "点数"
+        },
+        {
+          "name": "ゲーム機",
+          "weight": 30,
+          "score": 15000,
+          "effect": "点数"
+        },
+        {
+          "name": "ハートのエース",
+          "weight": 1,
+          "score": 300000,
+          "effect": "点数"
+        },
+        {
+          "name": "スペードのエース",
+          "weight": 1,
+          "score": 300000,
+          "effect": "点数"
+        },
+        {
+          "name": "クローバーのエース",
+          "weight": 1,
+          "score": 300000,
+          "effect": "点数"
+        },
+        {
+          "name": "ダイヤのエース",
+          "weight": 1,
+          "score": 300000,
+          "effect": "点数"
+        }
+      ],
+      "canvas": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        47
+      ],
+      "phases": [
+        "closed",
+        "half_open",
+        "open"
+      ],
+      "sheet": "chest_high_sheet.png"
+    },
+    {
+      "id": "rare",
+      "name": "レア",
+      "draws": 2,
+      "weight_total": 144,
+      "weighted_items": [
+        {
+          "name": "札束",
+          "weight": 30,
+          "score": 10000,
+          "effect": "点数"
+        },
+        {
+          "name": "スーツケース",
+          "weight": 10,
+          "score": 100000,
+          "effect": "点数"
+        },
+        {
+          "name": "王冠",
+          "weight": 30,
+          "score": 20000,
+          "effect": "点数"
+        },
+        {
+          "name": "ダイヤモンド",
+          "weight": 30,
+          "score": 25000,
+          "effect": "点数"
+        },
+        {
+          "name": "ゲーム機",
+          "weight": 30,
+          "score": 15000,
+          "effect": "点数"
+        },
+        {
+          "name": "ハートのエース",
+          "weight": 1,
+          "score": 300000,
+          "effect": "点数"
+        },
+        {
+          "name": "スペードのエース",
+          "weight": 1,
+          "score": 300000,
+          "effect": "点数"
+        },
+        {
+          "name": "クローバーのエース",
+          "weight": 1,
+          "score": 300000,
+          "effect": "点数"
+        },
+        {
+          "name": "ダイヤのエース",
+          "weight": 1,
+          "score": 300000,
+          "effect": "点数"
+        },
+        {
+          "name": "エリクサー",
+          "weight": 10,
+          "score": 5000,
+          "effect": "HP100％回復"
+        }
+      ],
+      "canvas": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        47
+      ],
+      "phases": [
+        "closed",
+        "half_open",
+        "open"
+      ],
+      "sheet": "chest_rare_sheet.png"
+    },
+    {
+      "id": "weapon",
+      "name": "武器箱",
+      "draws": 1,
+      "weight_total": 100,
+      "weighted_items": [
+        {
+          "name": "刀",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "戦塵の斧",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "マシンガン",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "ロケットランチャー",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "よいちの弓",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "火炎放射器",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "グングニルのやり",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "バトルハンマー",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "ロケットパンチ",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        },
+        {
+          "name": "波動砲",
+          "weight": 10,
+          "score": 0,
+          "effect": "武器"
+        }
+      ],
+      "canvas": [
+        48,
+        48
+      ],
+      "origin": [
+        24,
+        47
+      ],
+      "phases": [
+        "closed",
+        "half_open",
+        "open"
+      ],
+      "sheet": "chest_weapon_sheet.png"
+    }
+  ]
+}

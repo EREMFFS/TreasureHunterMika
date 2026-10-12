@@ -1,0 +1,3 @@
+﻿fixed_id,section_id,enemy_id,weapon_id,anchor_id,formation,slot,x,y,spawn_trigger,activation,drop_weapon,counts_toward_wave_total,counts_toward_wave_cap,source,position_status
+C2_cylinder,C2,mega_goblin,none,C_tank_fixed_01,cylinder,1,706,170,cylinder_break,,False,False,False,2C 脱出槽（固定1体）,
+C4_cylinder,C4,mega_goblin,none,C_tank_fixed_02,cylinder,1,1472,170,cylinder_break,,False,False,False,2C 脱出槽（固定1体）,

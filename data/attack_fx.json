@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "native_resolution": [
+    384,
+    216
+  ],
+  "effects": {
+    "somersault": {
+      "canvas": [
+        96,
+        96
+      ],
+      "origin": [
+        48,
+        77
+      ],
+      "attachment": "fighter_root",
+      "duration_ms": [
+        40,
+        50,
+        60
+      ],
+      "sheet": "fx/air_somersault_sheet.png",
+      "files": [
+        "fx/air_somersault_00.png",
+        "fx/air_somersault_01.png",
+        "fx/air_somersault_02.png"
+      ],
+      "frames": 3,
+      "loop": false,
+      "facing": "right",
+      "mirror_for_left": true,
+      "render_scale": 1,
+      "source_crops": [
+        [
+          404,
+          379,
+          677,
+          665
+        ],
+        [
+          1032,
+          58,
+          1390,
+          665
+        ],
+        [
+          1823,
+          111,
+          2108,
+          665
+        ]
+      ],
+      "blend": "source-over",
+      "lifetime_ms": 150,
+      "fade": "opacity 1 through frame1 then fade to0 across frame2; clear after lifetime"
+    },
+    "jump_kick": {
+      "canvas": [
+        64,
+        32
+      ],
+      "origin": [
+        42,
+        16
+      ],
+      "attachment": "leading_boot_tip",
+      "duration_ms": [
+        35,
+        45,
+        50
+      ],
+      "sheet": "fx/air_jump_kick_sheet.png",
+      "files": [
+        "fx/air_jump_kick_00.png",
+        "fx/air_jump_kick_01.png",
+        "fx/air_jump_kick_02.png"
+      ],
+      "frames": 3,
+      "loop": false,
+      "facing": "right",
+      "mirror_for_left": true,
+      "render_scale": 1,
+      "source_crops": [
+        [
+          112,
+          322,
+          562,
+          429
+        ],
+        [
+          714,
+          335,
+          1543,
+          443
+        ],
+        [
+          1770,
+          342,
+          2049,
+          422
+        ]
+      ],
+      "blend": "source-over",
+      "lifetime_ms": 130,
+      "fade": "opacity 1 through frame1 then fade to0 across frame2; clear after lifetime"
+    },
+    "melee": {
+      "canvas": [
+        32,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "attachment": "fist_or_boot_tip",
+      "duration_ms": [
+        30,
+        40,
+        40
+      ],
+      "sheet": "fx/air_melee_sheet.png",
+      "files": [
+        "fx/air_melee_00.png",
+        "fx/air_melee_01.png",
+        "fx/air_melee_02.png"
+      ],
+      "frames": 3,
+      "loop": false,
+      "facing": "right",
+      "mirror_for_left": true,
+      "render_scale": 1,
+      "source_crops": [
+        [
+          234,
+          314,
+          625,
+          418
+        ],
+        [
+          855,
+          290,
+          1403,
+          457
+        ],
+        [
+          1642,
+          307,
+          1903,
+          417
+        ]
+      ],
+      "blend": "source-over",
+      "lifetime_ms": 110,
+      "fade": "opacity 1 through frame1 then fade to0 across frame2; clear after lifetime"
+    }
+  },
+  "anchor_policy": "somersault uses grounded actor origin minus engine height; kick/melee use per-frame hand/foot contact point. Use local coordinates and mirror offsets when facing left.",
+  "spawn_policy": "spawn once at active attack entry even on miss; not once per input poll or overlapping target",
+  "damage_policy": "pure visual FX; no new damage hits. Reach increase must be configured separately in existing attack hitboxes.",
+  "replaces": "previous procedural somersault effect; disable old effect when new textures are used",
+  "hit_spark_policy": "separate confirmed-hit effect; can coexist; do not substitute this for impact spark",
+  "contact_offsets_proposal": {
+    "jump_kick_active_frame": {
+      "from_actor_root": [
+        37,
+        -28
+      ]
+    },
+    "punch_active_frame": {
+      "from_actor_root": [
+        23,
+        -27
+      ]
+    }
+  },
+  "notes": [
+    "Offsets and timing are initial proposals based on adopted assets, verify against actual runtime motions.",
+    "Add approximately8-12 native px forward to basic attack reach as initial interpretation of one-two Mika fists. User intent is fist1-2 width, not a fixed 1.2 multiplier.",
+    "Do not enlarge depth lane indiscriminately or add a second FX damage hit.",
+    "Use alpha textures with nearest-neighbor. Do not draw black rectangle behind effect or giant opaque glow.",
+    "GIFs demonstrate adopted poses and proposed placement; they are not captures from Claude game nor the latest gameplay physics."
+  ]
+}

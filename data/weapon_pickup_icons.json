@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "icons": {
+    "machinegun": {
+      "file": "item_machinegun.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "rocket_launcher": {
+      "file": "item_rocket_launcher.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "war_axe": {
+      "file": "item_war_axe.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "flamethrower": {
+      "file": "item_flamethrower.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "yoichi_bow": {
+      "file": "item_yoichi_bow.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "gungnir": {
+      "file": "item_gungnir.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "battle_hammer": {
+      "file": "item_battle_hammer.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "rocket_punch": {
+      "file": "item_rocket_punch.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "wave_cannon": {
+      "file": "item_wave_cannon.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    },
+    "katana": {
+      "file": "item_katana.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ]
+    }
+  },
+  "separate_slot": "aegis_shield",
+  "aliases": {
+    "submachinegun": "machinegun",
+    "与一の弓": "yoichi_bow",
+    "よいちの弓": "yoichi_bow",
+    "よいちのゆみ": "yoichi_bow"
+  }
+}

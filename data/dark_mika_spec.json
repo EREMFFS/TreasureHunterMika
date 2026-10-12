@@ -1,0 +1,460 @@
+{
+  "boss": "dark_mika",
+  "stage": 2,
+  "map": "2C",
+  "status": "design_proposal_not_game_implementation",
+  "reuse_character": "mika",
+  "hp": null,
+  "phase2_hp_fraction_proposal": 0.5,
+  "phase_transition_once": true,
+  "movement": "frequent_moving_jumps_with_landing_openings",
+  "attack_lane_check": "reuse_existing_lane_alignment",
+  "katana": {
+    "starts_equipped": true,
+    "drop_on": "successful_knockback",
+    "max_drops_per_fight": 1,
+    "player_can_pick_up": true,
+    "boss_repickup_proposal": false,
+    "drop_available_in_phase2_if_still_equipped": true
+  },
+  "phase2_guns": {
+    "families": [
+      "machinegun",
+      "rocket_launcher"
+    ],
+    "drop_items": false,
+    "switch_hp_threshold_is_proposal": true
+  },
+  "adds": {
+    "data_source": "stage_spawn_data",
+    "concurrent_cap_proposal": 3,
+    "enemy_families_pending": true,
+    "stop_spawning_on_boss_hp_zero": true
+  },
+  "defeat": {
+    "sequence": [
+      "finishing_hit_slow_motion",
+      "fall_down",
+      "explosion",
+      "body_blink",
+      "disappear",
+      "stage_clear"
+    ],
+    "slow_motion": {
+      "policy": "delegate_to_existing_game_common_defeat_effect",
+      "override_time_scale": false,
+      "override_duration": false,
+      "do_not_apply_twice": true,
+      "game_trigger_verification_by_implementer_required": true
+    },
+    "explosion_ms_proposal": 1200,
+    "blink_ms_proposal": 800,
+    "blink_interval_ms_proposal": 80,
+    "death_explosion_damage": false,
+    "pause_freezes_progress": true,
+    "stop_time_countdown_on_hp_zero": true,
+    "reward_commit_once": true
+  },
+  "source_animation_references": {
+    "walk": {
+      "frames": 6,
+      "duration_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": true,
+      "sheet": "sprites/dark_mika_walk_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "dash": {
+      "frames": 6,
+      "duration_ms": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": true,
+      "sheet": "sprites/dark_mika_dash_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "jump": {
+      "frames": 5,
+      "phases": [
+        "takeoff",
+        "ascent",
+        "apex",
+        "descent",
+        "landing"
+      ],
+      "air_horizontal_control_planned": true,
+      "sheet": "sprites/dark_mika_jump_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "duration_ms": [
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false
+    },
+    "damage_light": {
+      "frames": 2,
+      "sheet": "sprites/dark_mika_damage_light_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "duration_ms": [
+        100,
+        100
+      ],
+      "loop": false
+    },
+    "damage_heavy": {
+      "frames": 2,
+      "sheet": "sprites/dark_mika_damage_heavy_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "duration_ms": [
+        100,
+        100
+      ],
+      "loop": false
+    },
+    "knockback": {
+      "frames": 4,
+      "phases": [
+        "impact",
+        "airborne",
+        "falling",
+        "downed"
+      ],
+      "sheet": "sprites/dark_mika_knockback_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "duration_ms": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false
+    },
+    "getup": {
+      "frames": 3,
+      "duration_ms": [
+        160,
+        160,
+        120
+      ],
+      "phases": [
+        "sit_up",
+        "one_knee",
+        "guard"
+      ],
+      "sheet": "sprites/dark_mika_getup_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "loop": false
+    },
+    "defeated": {
+      "frames": 3,
+      "duration_ms": [
+        160,
+        140,
+        150
+      ],
+      "phases": [
+        "knees_buckle",
+        "collapse",
+        "downed_wait"
+      ],
+      "loop": false,
+      "hold_final_frame": true,
+      "sheet": "sprites/dark_mika_defeated_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "punch": {
+      "frames": 3,
+      "duration_ms": [
+        60,
+        80,
+        100
+      ],
+      "phases": [
+        "windup",
+        "contact",
+        "recovery"
+      ],
+      "loop": false,
+      "active_frame": 1,
+      "hold_final_frame": false,
+      "sheet": "sprites/dark_mika_punch_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "kick_right": {
+      "frames": 3,
+      "duration_ms": [
+        60,
+        80,
+        100
+      ],
+      "phases": [
+        "knee_chamber",
+        "contact",
+        "rechamber"
+      ],
+      "loop": false,
+      "active_frame": 1,
+      "hold_final_frame": false,
+      "sheet": "sprites/dark_mika_kick_right_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "kick_left": {
+      "frames": 3,
+      "duration_ms": [
+        60,
+        80,
+        100
+      ],
+      "phases": [
+        "knee_chamber",
+        "contact",
+        "rechamber"
+      ],
+      "loop": false,
+      "active_frame": 1,
+      "hold_final_frame": false,
+      "sheet": "sprites/dark_mika_kick_left_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "katana_idle": {
+      "frames": 1,
+      "sheet": "sprites/dark_mika_katana_idle_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "duration_ms": [
+        100
+      ],
+      "loop": false
+    },
+    "katana_vertical": {
+      "frames": 4,
+      "duration_ms": [
+        140,
+        80,
+        100,
+        450
+      ],
+      "phases": [
+        "overhead_windup",
+        "downstroke",
+        "followthrough",
+        "ready"
+      ],
+      "loop": false,
+      "active_frame": 1,
+      "sheet": "sprites/dark_mika_katana_vertical_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "katana_horizontal": {
+      "frames": 3,
+      "duration_ms": [
+        120,
+        80,
+        100
+      ],
+      "phases": [
+        "hip_windup",
+        "horizontal_sweep",
+        "turn_followthrough"
+      ],
+      "loop": false,
+      "active_frame": 1,
+      "sheet": "sprites/dark_mika_katana_horizontal_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "katana_jump": {
+      "frames": 4,
+      "duration_ms": [
+        110,
+        90,
+        120,
+        140
+      ],
+      "phases": [
+        "air_windup",
+        "air_downstroke",
+        "air_followthrough",
+        "ground_landing"
+      ],
+      "loop": false,
+      "active_frame": 1,
+      "air_horizontal_control_planned": true,
+      "sheet": "sprites/dark_mika_katana_jump_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "machinegun_ready": {
+      "frames": 1,
+      "sheet": "sprites/dark_mika_machinegun_ready_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "duration_ms": [
+        100
+      ],
+      "loop": false
+    },
+    "machinegun_fire": {
+      "frames": 2,
+      "duration_ms": [
+        60,
+        60
+      ],
+      "loop": true,
+      "muzzle_points": [
+        [
+          68,
+          46
+        ],
+        [
+          68,
+          44
+        ]
+      ],
+      "sheet": "sprites/dark_mika_machinegun_fire_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    },
+    "machinegun_jump_fire": {
+      "frames": 2,
+      "muzzle_points": [
+        [
+          67,
+          48
+        ],
+        [
+          65,
+          48
+        ]
+      ],
+      "air_horizontal_control_planned": true,
+      "sheet": "sprites/dark_mika_machinegun_jump_fire_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "duration_ms": [
+        100,
+        100
+      ],
+      "loop": false
+    },
+    "rocket_launcher": {
+      "frames": 4,
+      "phases": [
+        "ground_ready",
+        "ground_shot",
+        "air_ready",
+        "air_shot"
+      ],
+      "muzzle_points": [
+        [
+          68,
+          47
+        ],
+        [
+          65,
+          46
+        ],
+        [
+          67,
+          45
+        ],
+        [
+          66,
+          46
+        ]
+      ],
+      "air_horizontal_control_planned": true,
+      "sheet": "sprites/dark_mika_rocket_launcher_sheet.png",
+      "origin": [
+        48,
+        77
+      ],
+      "duration_ms": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false
+    },
+    "idle": {
+      "frames": 4,
+      "duration_ms": [
+        200,
+        180,
+        200,
+        180
+      ],
+      "loop": true,
+      "sheet": "sprites/dark_mika_idle_sheet.png",
+      "origin": [
+        48,
+        77
+      ]
+    }
+  },
+  "new_art_scope": "20 boss-required animations, 65 frames",
+  "palette": "near-black shadow, including face and skin; subtle charcoal highlights"
+}

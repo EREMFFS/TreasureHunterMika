@@ -1,0 +1,19 @@
+﻿fixed_id,section_id,enemy_id,weapon_id,anchor_id,formation,slot,x,y,spawn_trigger,activation,drop_weapon,counts_toward_wave_total,counts_toward_wave_cap,source,position_status
+A3_fixed_01,A3,goblin,none,A_chest_01+A_chest_02,around_chest_group,1,,,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+A3_fixed_02,A3,goblin,none,A_chest_01+A_chest_02,around_chest_group,2,,,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+A3_fixed_03,A3,goblin,none,A_chest_01+A_chest_02,around_chest_group,3,,,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+A3_fixed_04,A3,goblin,none,A_chest_01+A_chest_02,around_chest_group,4,,,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+A5_fixed_01,A5,goblin,none,A_chest_03+A_chest_04,around_chest_group,1,,,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+A5_fixed_02,A5,goblin,none,A_chest_03+A_chest_04,around_chest_group,2,,,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+A5_fixed_03,A5,goblin,none,A_chest_03+A_chest_04,around_chest_group,3,,,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+A5_fixed_04,A5,goblin,none,A_chest_03+A_chest_04,around_chest_group,4,,,section_enter,mika_enters_scene,False,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+B2_fixed_01,B2,goblin,yoichi_bow,B_prop_06,vertical_line_behind_barricade,1,,,section_enter,mika_enters_scene,True,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+B2_fixed_02,B2,goblin,none,B_prop_06,vertical_line_behind_barricade,2,,,section_enter,mika_enters_scene,False,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+B2_fixed_03,B2,goblin,none,B_prop_06,vertical_line_behind_barricade,3,,,section_enter,mika_enters_scene,False,False,False,今回ユーザー指定,具体座標・射線・接触幅は配置調整
+B4_fixed_01,B4,goblin,none,B4_barricade_new,vertical_line_behind_barricade,1,1408,154,section_enter,mika_enters_scene,False,False,False,今回ユーザー指定,initial specified layout v118
+B4_fixed_02,B4,goblin,yoichi_bow,B4_barricade_new,vertical_line_behind_barricade,2,1408,174,section_enter,mika_enters_scene,True,False,False,今回ユーザー指定,initial specified layout v118
+B4_fixed_03,B4,goblin,none,B4_barricade_new,vertical_line_behind_barricade,3,1408,194,section_enter,mika_enters_scene,False,False,False,今回ユーザー指定,initial specified layout v118
+C1_fixed_01,C1,goblin,none,C1_barricade_new,behind_barricade,1,256,153,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,initial specified layout v118
+C1_fixed_02,C1,goblin,none,C1_barricade_new,behind_barricade,2,310,163,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,initial specified layout v118
+C1_fixed_03,C1,goblin,none,C1_barricade_new,behind_barricade,3,256,192,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,initial specified layout v118
+C1_fixed_04,C1,goblin,none,C1_barricade_new,behind_barricade,4,314,195,section_enter,mika_enters_scene,,False,False,今回ユーザー指定,initial specified layout v118

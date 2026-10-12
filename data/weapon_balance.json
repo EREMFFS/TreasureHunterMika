@@ -1,0 +1,97 @@
+{
+  "source": "design_items.xlsx / 武器効果",
+  "authoritative_over_earlier_proposals": true,
+  "discard_on_map_transition": true,
+  "weapons": {
+    "katana": {
+      "name": "刀",
+      "uses": 20,
+      "enemy_uses": 255,
+      "damage": 2,
+      "enemy_damage": 5,
+      "description": "超高速で連続で斬りつけられる。コンボ無限。",
+      "stagger": "弱"
+    },
+    "war_axe": {
+      "name": "戦塵の斧",
+      "uses": 10,
+      "enemy_uses": 10,
+      "damage": 10,
+      "enemy_damage": 10,
+      "description": "時間差範囲攻撃で全部巻き込む",
+      "stagger": "大"
+    },
+    "machinegun": {
+      "name": "マシンガン",
+      "uses": 50,
+      "enemy_uses": 255,
+      "damage": 1,
+      "enemy_damage": 2,
+      "description": "超高速連打。",
+      "stagger": "弱"
+    },
+    "rocket_launcher": {
+      "name": "ロケットランチャー",
+      "uses": 3,
+      "enemy_uses": 3,
+      "damage": 20,
+      "enemy_damage": 20,
+      "description": "超範囲攻撃ふっとばし",
+      "stagger": "大"
+    },
+    "yoichi_bow": {
+      "name": "よいちのゆみ",
+      "uses": 10,
+      "enemy_uses": 5,
+      "damage": 5,
+      "enemy_damage": 5,
+      "description": "横直線貫通攻撃",
+      "stagger": "弱"
+    },
+    "flamethrower": {
+      "name": "火炎放射器",
+      "uses": "10秒",
+      "enemy_uses": "５秒",
+      "damage": "0.1秒で1",
+      "enemy_damage": "0.1秒で1",
+      "description": "前方範囲照射",
+      "stagger": "弱"
+    },
+    "gungnir": {
+      "name": "グングニルのやり",
+      "uses": 20,
+      "enemy_uses": 5,
+      "damage": 10,
+      "enemy_damage": 5,
+      "description": "前方貫通攻撃",
+      "stagger": "弱"
+    },
+    "battle_hammer": {
+      "name": "バトルハンマー",
+      "uses": 10,
+      "enemy_uses": 10,
+      "damage": 15,
+      "enemy_damage": 8,
+      "description": "ふっとばし",
+      "stagger": "大"
+    },
+    "rocket_punch": {
+      "name": "ロケットパンチ",
+      "uses": 5,
+      "enemy_uses": 10,
+      "damage": 12,
+      "enemy_damage": 10,
+      "description": "往復でダメージふっとばし",
+      "stagger": "大"
+    },
+    "wave_cannon": {
+      "name": "波動砲",
+      "uses": 1,
+      "enemy_uses": 1,
+      "damage": 100,
+      "enemy_damage": 50,
+      "description": "画面全体アタック吹っ飛び",
+      "stagger": "大"
+    }
+  }
+}

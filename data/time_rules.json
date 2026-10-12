@@ -1,0 +1,192 @@
+{
+  "initial_value": 99,
+  "tick_interval_ms": 4000,
+  "bonus_multiplier": 100,
+  "bonus_award": "once_on_stage_clear",
+  "sections": [
+    {
+      "id": "A1",
+      "map": "A",
+      "kind": "combat",
+      "screen": 1
+    },
+    {
+      "id": "A1_travel",
+      "map": "A",
+      "kind": "travel",
+      "from_screen": 1,
+      "to_screen": 2
+    },
+    {
+      "id": "A2",
+      "map": "A",
+      "kind": "combat",
+      "screen": 2
+    },
+    {
+      "id": "A2_travel",
+      "map": "A",
+      "kind": "travel",
+      "from_screen": 2,
+      "to_screen": 3
+    },
+    {
+      "id": "A3",
+      "map": "A",
+      "kind": "combat",
+      "screen": 3
+    },
+    {
+      "id": "A3_travel",
+      "map": "A",
+      "kind": "travel",
+      "from_screen": 3,
+      "to_screen": 4
+    },
+    {
+      "id": "A4",
+      "map": "A",
+      "kind": "combat",
+      "screen": 4
+    },
+    {
+      "id": "A4_travel",
+      "map": "A",
+      "kind": "travel",
+      "from_screen": 4,
+      "to_screen": 5
+    },
+    {
+      "id": "A5",
+      "map": "A",
+      "kind": "combat",
+      "screen": 5
+    },
+    {
+      "id": "B1",
+      "map": "B",
+      "kind": "combat",
+      "screen": 1
+    },
+    {
+      "id": "B1_travel",
+      "map": "B",
+      "kind": "travel",
+      "from_screen": 1,
+      "to_screen": 2
+    },
+    {
+      "id": "B2",
+      "map": "B",
+      "kind": "combat",
+      "screen": 2
+    },
+    {
+      "id": "B2_travel",
+      "map": "B",
+      "kind": "travel",
+      "from_screen": 2,
+      "to_screen": 3
+    },
+    {
+      "id": "B3",
+      "map": "B",
+      "kind": "combat",
+      "screen": 3
+    },
+    {
+      "id": "B3_travel",
+      "map": "B",
+      "kind": "travel",
+      "from_screen": 3,
+      "to_screen": 4
+    },
+    {
+      "id": "B4",
+      "map": "B",
+      "kind": "combat",
+      "screen": 4
+    },
+    {
+      "id": "B4_travel",
+      "map": "B",
+      "kind": "travel",
+      "from_screen": 4,
+      "to_screen": 5
+    },
+    {
+      "id": "B5",
+      "map": "B",
+      "kind": "combat",
+      "screen": 5
+    },
+    {
+      "id": "C1",
+      "map": "C",
+      "kind": "combat",
+      "screen": 1
+    },
+    {
+      "id": "C1_travel",
+      "map": "C",
+      "kind": "travel",
+      "from_screen": 1,
+      "to_screen": 2
+    },
+    {
+      "id": "C2",
+      "map": "C",
+      "kind": "combat",
+      "screen": 2
+    },
+    {
+      "id": "C2_travel",
+      "map": "C",
+      "kind": "travel",
+      "from_screen": 2,
+      "to_screen": 3
+    },
+    {
+      "id": "C3",
+      "map": "C",
+      "kind": "combat",
+      "screen": 3
+    },
+    {
+      "id": "C3_travel",
+      "map": "C",
+      "kind": "travel",
+      "from_screen": 3,
+      "to_screen": 4
+    },
+    {
+      "id": "C4",
+      "map": "C",
+      "kind": "combat",
+      "screen": 4
+    },
+    {
+      "id": "C4_travel",
+      "map": "C",
+      "kind": "travel",
+      "from_screen": 4,
+      "to_screen": 5
+    },
+    {
+      "id": "C5",
+      "map": "C",
+      "kind": "combat",
+      "screen": 5
+    }
+  ],
+  "pause_supported": true,
+  "pause_keys": [
+    "P",
+    "Escape"
+  ],
+  "hidden_room_timer_policy": "unresolved; preview suspends parent timer",
+  "rescue_timer_policy": null,
+  "fade_timer_policy": null,
+  "timeout": "time_up_event; death/rescue resolution pending",
+  "preview_phase_advance": "manual clear button; combat engine not implemented"
+}

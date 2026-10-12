@@ -1,0 +1,185 @@
+{
+  "ドル袋": {
+    "id": "money_bag",
+    "kind": "item",
+    "file": "item_money_bag.png"
+  },
+  "札束": {
+    "id": "banknotes",
+    "kind": "item",
+    "file": "item_banknotes.png"
+  },
+  "スーツケース": {
+    "id": "cash_suitcase",
+    "kind": "item",
+    "file": "item_cash_suitcase.png"
+  },
+  "指輪": {
+    "id": "ring",
+    "kind": "item",
+    "file": "item_ring.png"
+  },
+  "宝石": {
+    "id": "gem",
+    "kind": "item",
+    "file": "item_gem.png"
+  },
+  "ブレスレット": {
+    "id": "bracelet",
+    "kind": "item",
+    "file": "item_bracelet.png"
+  },
+  "ネックレス": {
+    "id": "necklace",
+    "kind": "item",
+    "file": "item_necklace.png"
+  },
+  "金の彫像": {
+    "id": "gold_statue",
+    "kind": "item",
+    "file": "item_gold_statue.png"
+  },
+  "王冠": {
+    "id": "crown",
+    "kind": "item",
+    "file": "item_crown.png"
+  },
+  "ダイヤモンド": {
+    "id": "diamond",
+    "kind": "item",
+    "file": "item_diamond.png"
+  },
+  "ゲームソフト": {
+    "id": "game_cartridge",
+    "kind": "item",
+    "file": "item_game_cartridge.png"
+  },
+  "ゲーム機": {
+    "id": "game_console",
+    "kind": "item",
+    "file": "item_game_console.png"
+  },
+  "ハートのエース": {
+    "id": "ace_hearts",
+    "kind": "item",
+    "file": "item_ace_hearts.png"
+  },
+  "スペードのエース": {
+    "id": "ace_spades",
+    "kind": "item",
+    "file": "item_ace_spades.png"
+  },
+  "クローバーのエース": {
+    "id": "ace_clubs",
+    "kind": "item",
+    "file": "item_ace_clubs.png"
+  },
+  "ダイヤのエース": {
+    "id": "ace_diamonds",
+    "kind": "item",
+    "file": "item_ace_diamonds.png"
+  },
+  "チョコレート": {
+    "id": "chocolate",
+    "kind": "item",
+    "file": "item_chocolate.png"
+  },
+  "りんご": {
+    "id": "apple",
+    "kind": "item",
+    "file": "item_apple.png"
+  },
+  "ポーション": {
+    "id": "potion",
+    "kind": "healing_item",
+    "file": "item_potion.png"
+  },
+  "ハイポーション": {
+    "id": "high_potion",
+    "kind": "healing_item",
+    "file": "item_high_potion.png"
+  },
+  "エリクサー": {
+    "id": "elixir",
+    "kind": "healing_item",
+    "file": "item_elixir.png"
+  },
+  "刀": {
+    "id": "katana",
+    "kind": "weapon",
+    "file": "item_katana.png",
+    "icon_status": "available v118"
+  },
+  "戦塵の斧": {
+    "id": "war_axe",
+    "kind": "weapon",
+    "file": "item_war_axe.png",
+    "icon_status": "available v118"
+  },
+  "マシンガン": {
+    "id": "machinegun",
+    "kind": "weapon",
+    "file": "item_machinegun.png",
+    "icon_status": "available v118"
+  },
+  "ロケットランチャー": {
+    "id": "rocket_launcher",
+    "kind": "weapon",
+    "file": "item_rocket_launcher.png",
+    "icon_status": "available v118"
+  },
+  "よいちのゆみ": {
+    "id": "yoichi_bow",
+    "kind": "weapon",
+    "file": "item_yoichi_bow.png",
+    "icon_status": "available v118"
+  },
+  "火炎放射器": {
+    "id": "flamethrower",
+    "kind": "weapon",
+    "file": "item_flamethrower.png",
+    "icon_status": "available v118"
+  },
+  "グングニルのやり": {
+    "id": "gungnir",
+    "kind": "weapon",
+    "file": "item_gungnir.png",
+    "icon_status": "available v118"
+  },
+  "バトルハンマー": {
+    "id": "battle_hammer",
+    "kind": "weapon",
+    "file": "item_battle_hammer.png",
+    "icon_status": "available v118"
+  },
+  "ロケットパンチ": {
+    "id": "rocket_punch",
+    "kind": "weapon",
+    "file": "item_rocket_punch.png",
+    "icon_status": "available v118"
+  },
+  "波動砲": {
+    "id": "wave_cannon",
+    "kind": "weapon",
+    "file": "item_wave_cannon.png",
+    "icon_status": "available v118"
+  },
+  "よいちの弓": {
+    "id": "yoichi_bow",
+    "kind": "weapon",
+    "file": "item_yoichi_bow.png",
+    "icon_status": "available v118"
+  },
+  "与一の弓": {
+    "id": "yoichi_bow",
+    "kind": "weapon",
+    "file": "item_yoichi_bow.png",
+    "icon_status": "available v118"
+  },
+  "サブマシンガン": {
+    "id": "machinegun",
+    "kind": "weapon",
+    "file": "item_machinegun.png",
+    "icon_status": "available v118"
+  }
+}

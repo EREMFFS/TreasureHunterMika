@@ -1,0 +1,73 @@
+{
+  "name": "ゴブリンロボ",
+  "stage": 1,
+  "hp": null,
+  "sprite_height_px": 128,
+  "design": "Goblin pilot controls levers on open waist cockpit; mechanical waist legs and waist-mounted arms; no robot head or upper torso",
+  "movement": "slow",
+  "attack_selection": "Approximate lane alignment and attack reach; tolerance and ranges undecided",
+  "intro": "Falls from sky and lands heavily; reuse jump motion planned",
+  "attacks": {
+    "telescoping_punch": {
+      "damage": 8,
+      "knockback": true,
+      "telegraph": true,
+      "primary": true
+    },
+    "machinegun": {
+      "burst_bullets": 10,
+      "damage_per_bullet": 1,
+      "telegraph": true,
+      "direction": "forward"
+    },
+    "jump_stomp": {
+      "damage": 10,
+      "knockback": true,
+      "telegraph": "short",
+      "frequency": "occasional"
+    }
+  },
+  "knockdown": {
+    "can_be_knocked_down": true,
+    "temporary_invulnerability": true,
+    "getup_action": "jump attack",
+    "invulnerable_through_getup_jump": true,
+    "exact_end_timing": "undecided",
+    "animation_sequence": [
+      "goblin_robot_knockback",
+      "goblin_robot_down",
+      "goblin_robot_getup",
+      "goblin_robot_jump"
+    ],
+    "gameplay_implemented": false
+  },
+  "low_hp": {
+    "threshold_fraction": 0.25,
+    "comparison": "strictly below",
+    "effect": "red blink"
+  },
+  "defeat": "Long explosion; mech collapses into rubble; pilot falls and lies defeated",
+  "stage_spawn_rules": {
+    "maintain_goblin_count": 3,
+    "replace_defeated_goblins": true,
+    "spawn_interval_and_positions": "undecided",
+    "boss_death_stops_spawns": "undecided"
+  },
+  "status": "Core boss artwork complete: idle walk punch machinegun jump reactions and defeat; gameplay and stage integration pending",
+  "armor_palette": "Bright iron-white silver-gray armor, medium cool gray shading, dark joints, brass pistons and amber lamps",
+  "defeat_assets": {
+    "body": [
+      "goblin_robot_death_start_00.png",
+      "goblin_robot_collapse_00.png",
+      "goblin_robot_rubble_00.png"
+    ],
+    "pilot": [
+      "goblin_pilot_ejected_00.png",
+      "goblin_pilot_landing_00.png",
+      "goblin_pilot_defeated_00.png"
+    ],
+    "explosions": "existing rocket_explosion_00..04, staged multiple locations",
+    "preview_explosion_duration_ms": 3840,
+    "preview_only": true
+  }
+}

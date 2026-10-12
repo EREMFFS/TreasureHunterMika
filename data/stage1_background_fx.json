@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "native_size": [
+    384,
+    216
+  ],
+  "camera_max": 1536,
+  "proposal": true,
+  "effects": {
+    "smoke": {
+      "path": "fx/smoke_sheet.png",
+      "cell": [
+        32,
+        64
+      ],
+      "origin": [
+        16,
+        60
+      ],
+      "durations_ms": [
+        220,
+        220,
+        220,
+        220
+      ],
+      "opacity": 0.32
+    },
+    "electric": {
+      "path": "fx/electric_sheet.png",
+      "cell": [
+        24,
+        24
+      ],
+      "origin": [
+        12,
+        12
+      ],
+      "durations_ms": [
+        40,
+        50,
+        50,
+        60
+      ],
+      "opacity": 0.8
+    }
+  },
+  "maps": {
+    "A": {
+      "far": {
+        "path": "reference/far_day.png",
+        "factor": 0.08,
+        "opacity": 1
+      },
+      "mid": {
+        "path": "layers/mid_day.png",
+        "factor": 0.28,
+        "opacity": 0.65,
+        "y": 0
+      },
+      "smoke": [
+        [
+          128,
+          50
+        ],
+        [
+          580,
+          64
+        ],
+        [
+          940,
+          45
+        ],
+        [
+          1480,
+          65
+        ]
+      ],
+      "sparks": [
+        [
+          350,
+          95,
+          3900,
+          700
+        ],
+        [
+          815,
+          112,
+          5200,
+          1800
+        ]
+      ],
+      "lights": []
+    },
+    "C": {
+      "far": {
+        "path": "reference/far_sunset.png",
+        "factor": 0.08,
+        "opacity": 1
+      },
+      "mid": {
+        "path": "layers/mid_sunset.png",
+        "factor": 0.28,
+        "opacity": 0.65,
+        "y": 0
+      },
+      "smoke": [
+        [
+          380,
+          84
+        ],
+        [
+          985,
+          70
+        ],
+        [
+          1710,
+          70
+        ]
+      ],
+      "sparks": [
+        [
+          485,
+          120,
+          4600,
+          1100
+        ],
+        [
+          1230,
+          100,
+          5700,
+          2400
+        ]
+      ],
+      "lights": []
+    },
+    "B": {
+      "smoke": [],
+      "sparks": [
+        [
+          110,
+          75,
+          5100,
+          1300
+        ],
+        [
+          870,
+          58,
+          4300,
+          2500
+        ]
+      ],
+      "lights": [
+        [
+          69,
+          57
+        ],
+        [
+          281,
+          57
+        ],
+        [
+          470,
+          57
+        ],
+        [
+          690,
+          57
+        ],
+        [
+          890,
+          57
+        ],
+        [
+          1100,
+          57
+        ],
+        [
+          1300,
+          57
+        ],
+        [
+          1510,
+          57
+        ],
+        [
+          1720,
+          57
+        ]
+      ]
+    }
+  }
+}

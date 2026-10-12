@@ -1,0 +1,149 @@
+{
+  "version": 4,
+  "subtitle": "ゴブリン族の秘宝",
+  "main_title": "トレジャーハンターミカ / TREASURE HUNTER MIKA",
+  "subtitle_logo_status": "text_decided_logo_not_rebuilt",
+  "next_stage_confirmed_order": [
+    "空中鉄道",
+    "廃墟の駅"
+  ],
+  "mastermind": "ドクターS",
+  "doctor_visual": "elderly Doctor S / Cid in black silhouette; dense tall central mohawk leaning right, short squared drooping moustache, stooped coat; no bald dome or wing-shaped side hair; face not revealed",
+  "queen_survives": true,
+  "boss_HP_zero": "combat over; enter scripted ending; do NOT immediately clear or disappear",
+  "sequence": [
+    {
+      "id": "burst",
+      "start_ms_proposal": 0,
+      "end_ms_proposal": 1000
+    },
+    {
+      "id": "slump",
+      "start_ms_proposal": 1000,
+      "end_ms_proposal": 1800
+    },
+    {
+      "id": "gather",
+      "start_ms_proposal": 1800,
+      "end_ms_proposal": 3000
+    },
+    {
+      "id": "apology",
+      "start_ms_proposal": 3000,
+      "end_ms_proposal": 6200
+    },
+    {
+      "id": "doctor_shadow",
+      "start_ms_proposal": 6200,
+      "end_ms_proposal": 9400
+    },
+    {
+      "id": "stolen_treasure",
+      "start_ms_proposal": 9400,
+      "end_ms_proposal": 12600
+    },
+    {
+      "id": "take_train",
+      "start_ms_proposal": 12600,
+      "end_ms_proposal": 15800
+    },
+    {
+      "id": "goblins_jump_to_row",
+      "start_ms_proposal": 15800,
+      "end_ms_proposal": 16600
+    },
+    {
+      "id": "goblins_landing_hold",
+      "start_ms_proposal": 16600,
+      "end_ms_proposal": 16900
+    },
+    {
+      "id": "mika_exit_right",
+      "start_ms_proposal": 16900,
+      "end_ms_proposal": 18900
+    },
+    {
+      "id": "stage_clear",
+      "start_ms_proposal": 18900,
+      "end_ms_proposal": 19500
+    }
+  ],
+  "speech_card_order": [
+    "apology",
+    "doctor_shadow",
+    "stolen_treasure",
+    "take_train"
+  ],
+  "speech_semantics": [
+    "ごめんなさい許して",
+    "謎の黒い影の博士がいる",
+    "我々の宝を盗まれた",
+    "この先にある電車に乗って行って！"
+  ],
+  "speech_text_in_game": false,
+  "bubble_hold_ms_proposal": 3200,
+  "cutscene_goblins_count_proposal": 3,
+  "cutscene_goblins": "visual actors only, unarmed, no collision or attack, not counted in spawn cap, no XP/drop on event despawn",
+  "controls": "block combat inputs during scripted scene; pause must freeze scene clock",
+  "clear": "Mika and support robot leave right, then one stage-clear reward/jingle; proceed through existing world-map flow to stage4",
+  "shared_defeat_slow": "reuse existing brief defeat slow on final hit; begin timeline after slow completes so dialogue cards are not slowed twice",
+  "cleanup": "stop boss bullets and enemy attacks; do not carry live hitboxes into begging scene",
+  "pending": [
+    "actual treasure design",
+    "Doctor S final appearance",
+    "subtitle title-screen logo asset",
+    "music/SE cue choices",
+    "next-stage map IDs, official map labels, and detailed route"
+  ],
+  "timings_status": "all millisecond timings are adjustable proposals, not final balance values",
+  "take_train_gesture": {
+    "confirmed": "all goblins turn right and point together with exaggerated enlarged hands",
+    "start_with_card": "take_train",
+    "source_facing": "right",
+    "frames": "boss/goblin_point_00..03.png",
+    "hold_final_pose": true
+  },
+  "take_train_card": "train launches vigorously from station at left into open sky at right; no arrow in bubble",
+  "next_stage": {
+    "number": 4,
+    "name": "空中鉄道777",
+    "reading": "くうちゅうてつどう スリーセブン",
+    "numeral_reading": "スリーセブン"
+  },
+  "goblin_final_reposition": {
+    "action": "all three jump before Mika departs, land in horizontal row in front of queen",
+    "native_ground_feet_proposal": [
+      [
+        212,
+        200
+      ],
+      [
+        260,
+        200
+      ],
+      [
+        308,
+        200
+      ]
+    ],
+    "queen_ground_foot": [
+      268,
+      187
+    ],
+    "jump_ms_proposal": 800,
+    "jump_height_proposal": 28,
+    "landing_hold_ms_proposal": 300,
+    "hop_sprite": "boss/goblin_event_hop.png",
+    "landing_sprite": "boss/goblin_plead_01.png",
+    "all_must_land_before_departure": true
+  },
+  "draw_order": {
+    "sort_key": "ground foot y ascending",
+    "tie_breaker": "stable actor id",
+    "jump_height_affects": "screen position only, NEVER sorting",
+    "never_sort_by": "sprite top, head, oversized hand or projected y",
+    "include": "Mika, robot, queen, goblins, sign, other ground props",
+    "speech_bubble": "overlay after world actors"
+  },
+  "cutscene_goblins_alignment": "friendly_noncombat"
+}

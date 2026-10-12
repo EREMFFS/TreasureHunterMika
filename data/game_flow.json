@@ -1,0 +1,120 @@
+{
+ "version": 2,
+ "native_resolution": [
+  384,
+  216
+ ],
+ "flow": [
+  {
+   "state": "boot",
+   "next": "demo"
+  },
+  {
+   "state": "demo",
+   "status": "deferred_not_created",
+   "temporary_next": "title",
+   "next": "title"
+  },
+  {
+   "state": "title",
+   "next": "world_map",
+   "stage": 1
+  },
+  {
+   "state": "world_map",
+   "next": "stage",
+   "stage_range": [
+    1,
+    5
+   ]
+  },
+  {
+   "state": "stage",
+   "on_clear_stages_1_to_4": "world_map_next_stage",
+   "on_clear_stage_5": "clear_sequence"
+  },
+  {
+   "state": "clear_sequence",
+   "next": "ending_results"
+  },
+  {
+   "state": "ending_results",
+   "includes": [
+    "results",
+    "score_total"
+   ],
+   "next": "title"
+  }
+ ],
+ "world_map_rules": {
+  "stage_count": 5,
+  "cleared": "bright",
+  "uncleared": "dark",
+  "current": "icon_at_next_stage_blinks_before_stage_entry",
+  "selection": "automatic_sequential_progress",
+  "blink_interval_ms": null,
+  "map_show_duration_ms": null,
+  "stage_entry_transition": "pending",
+  "current_icon_style": "glowing gold/orange node in initial design",
+  "brightness_scope": "stage landmark regions"
+ },
+ "stages": [
+  {
+   "id": 1,
+   "theme": "ruined_city",
+   "status": "confirmed",
+   "node_position_native": [
+    72,
+    137
+   ]
+  },
+  {
+   "id": 2,
+   "theme": "moai_wasteland_and_secret_base",
+   "status": "confirmed",
+   "node_position_native": [
+    102,
+    80
+   ]
+  },
+  {
+   "id": 3,
+   "theme": "fairy_forest_clouds_castle",
+   "status": "confirmed",
+   "node_position_native": [
+    184,
+    106
+   ]
+  },
+  {
+   "id": 4,
+   "theme": "airborne_railway_777",
+   "status": "confirmed",
+   "node_position_native": [
+    276,
+    70
+   ]
+  },
+  {
+   "id": 5,
+   "theme": "despolis_highrise_city",
+   "status": "confirmed",
+   "node_position_native": [
+    342,
+    113
+   ]
+  }
+ ],
+ "runtime_implemented": false,
+ "art_is_static_mockup": true,
+ "art_assets": {
+  "initial_screen": "world_map_clean_384.png",
+  "initial_screen_source": "world_map_source.png",
+  "color_design_reference": "world_map_color_design_384.png",
+  "runtime_background": "world_map_clean_384.png",
+  "initial_screen_is_static_mockup": false,
+  "runtime_ui": "Draw WORLD MAP, STAGE N, current blinking icon, and uncleared dimming as separate runtime layers",
+  "region_data": "world_map_regions.json",
+  "static_reference_only": "world_map_static_stage1_reference.png"
+ }
+}

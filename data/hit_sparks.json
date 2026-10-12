@@ -1,0 +1,26 @@
+{
+  "canvas": [
+    32,
+    32
+  ],
+  "origin": [
+    16,
+    16
+  ],
+  "frames": [
+    "fx/hit_spark_00.png",
+    "fx/hit_spark_01.png",
+    "fx/hit_spark_02.png",
+    "fx/hit_spark_03.png"
+  ],
+  "duration_ms": [
+    40,
+    50,
+    50,
+    60
+  ],
+  "timing_is_proposal": true,
+  "loop": false,
+  "trigger": "confirmed hit event only; spawn once per hit id",
+  "gameplay_implemented": false
+}

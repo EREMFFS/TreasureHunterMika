@@ -1,0 +1,224 @@
+{
+  "enemy_id": "goblin",
+  "equipment_id": "helmet",
+  "scene": "B2",
+  "weapon_id": "katana",
+  "animations": {
+    "base": {
+      "frames": 6,
+      "canvas": [
+        96,
+        96
+      ],
+      "origin": [
+        48,
+        77
+      ],
+      "frame_origins": [
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ]
+      ],
+      "facing": "left",
+      "mirror_for_right": true,
+      "sheet": "goblin_helmet_base_sheet.png",
+      "duration_ms": [
+        250,
+        250,
+        180,
+        160,
+        140,
+        600
+      ],
+      "loop": false,
+      "preview_loops_only": true,
+      "scale": 0.20930232558139536,
+      "phases": [
+        "idle_00",
+        "idle_01",
+        "grabbed",
+        "knee_hit",
+        "airborne",
+        "downed"
+      ]
+    },
+    "walk": {
+      "frames": 6,
+      "canvas": [
+        96,
+        96
+      ],
+      "origin": [
+        48,
+        77
+      ],
+      "frame_origins": [
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ]
+      ],
+      "facing": "left",
+      "mirror_for_right": true,
+      "sheet": "goblin_helmet_walk_sheet.png",
+      "duration_ms": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        110
+      ],
+      "loop": true,
+      "preview_loops_only": true,
+      "scale": 0.19285714285714287
+    },
+    "katana": {
+      "frames": 4,
+      "canvas": [
+        96,
+        96
+      ],
+      "origin": [
+        48,
+        77
+      ],
+      "frame_origins": [
+        [
+          48,
+          77
+        ],
+        [
+          54,
+          77
+        ],
+        [
+          58,
+          77
+        ],
+        [
+          48,
+          77
+        ]
+      ],
+      "facing": "left",
+      "mirror_for_right": true,
+      "sheet": "goblin_helmet_katana_sheet.png",
+      "duration_ms": [
+        240,
+        90,
+        120,
+        170
+      ],
+      "loop": false,
+      "preview_loops_only": true,
+      "scale": 0.17307692307692307,
+      "phases": [
+        "telegraph",
+        "downstroke",
+        "followthrough",
+        "ready"
+      ],
+      "active_frames": [
+        1
+      ],
+      "next_state": "weapon_ready"
+    },
+    "getup": {
+      "frames": 3,
+      "canvas": [
+        96,
+        96
+      ],
+      "origin": [
+        48,
+        77
+      ],
+      "frame_origins": [
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ]
+      ],
+      "facing": "left",
+      "mirror_for_right": true,
+      "sheet": "goblin_helmet_getup_sheet.png",
+      "duration_ms": [
+        160,
+        160,
+        120
+      ],
+      "loop": false,
+      "preview_loops_only": true,
+      "scale": 0.13881748071979436,
+      "phases": [
+        "sit_up",
+        "one_knee",
+        "guard"
+      ],
+      "next_state": "idle"
+    }
+  },
+  "headgear_baked_in": true,
+  "overlay_helmet": false,
+  "behavior": "Use existing B2 helmet rule. Do not invent extra defense or HP.",
+  "available": [
+    "idle",
+    "walk",
+    "grabbed",
+    "knee_hit",
+    "airborne",
+    "downed",
+    "getup",
+    "katana"
+  ]
+}

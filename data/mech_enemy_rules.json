@@ -1,0 +1,783 @@
+{
+  "native_frame": [
+    96,
+    96
+  ],
+  "origin": [
+    48,
+    77
+  ],
+  "source_facing": "left",
+  "mega_goblin": {
+    "base_hp": 20,
+    "weapon_use": true,
+    "animations_ready": [
+      "idle",
+      "walk",
+      "punch",
+      "hit",
+      "knockback",
+      "down",
+      "getup",
+      "smg",
+      "rocket",
+      "katana",
+      "axe",
+      "spear",
+      "hammer",
+      "flamethrower",
+      "bow",
+      "rocket_punch",
+      "hadou_cannon",
+      "death"
+    ],
+    "remaining": "use existing goblin action list and weapon variants as motion reference; further frames not yet supplied",
+    "attack_damage": "pending",
+    "weight": 15
+  },
+  "small_robot": {
+    "hp": 24,
+    "attack": 8,
+    "appearance": "white glossy steel; red single eye; dark joints",
+    "behavior": "move, stop, look around, repeat; punch and occasional hand projectile",
+    "death_order": [
+      "explosion",
+      "scatter mechanical parts",
+      "collapse",
+      "blink",
+      "disappear"
+    ],
+    "death_parts": "separate non-damaging visual FX",
+    "animations_ready": [
+      "idle",
+      "walk",
+      "scan",
+      "punch",
+      "shoot",
+      "hit",
+      "knockback",
+      "down",
+      "getup",
+      "death"
+    ],
+    "id": "megamega",
+    "display_name": "メガメガ",
+    "movement": "engine alternates moving and stopping; walk animation loops only while moving",
+    "look_around": "play megamega_scan once while stopped, optionally face Mika afterwards; cadence pending",
+    "sprite_body_height_initial": 80,
+    "nonlethal_knockdown": "intact body: knockback, hold down_00, getup, resume existing AI; lethal death uses megamega_death and white explosion FX",
+    "weight": 18
+  },
+  "stage_usage": {
+    "introduced_in": [
+      2
+    ],
+    "later_stages": "4 onward",
+    "normal_goblin_and_hobgoblin": "planned absent from stage4 onward"
+  },
+  "idle": {
+    "files": [
+      "mega_goblin/idle_00.png",
+      "mega_goblin/idle_01.png",
+      "mega_goblin/idle_02.png",
+      "mega_goblin/idle_03.png"
+    ],
+    "frame_ms": 180,
+    "loop": true
+  },
+  "walk": {
+    "files": [
+      "mega_goblin/walk_00.png",
+      "mega_goblin/walk_01.png",
+      "mega_goblin/walk_02.png",
+      "mega_goblin/walk_03.png"
+    ],
+    "frame_ms": 130,
+    "loop": true
+  },
+  "punch": {
+    "files": [
+      "mega_goblin/punch_00.png",
+      "mega_goblin/punch_01.png",
+      "mega_goblin/punch_02.png",
+      "mega_goblin/punch_03.png"
+    ],
+    "frame_ms_proposal": [
+      100,
+      80,
+      120,
+      140
+    ],
+    "loop_in_game": false,
+    "active_frame_proposal": 2
+  },
+  "hit": {
+    "files": [
+      "mega_goblin/hit_00.png",
+      "mega_goblin/hit_01.png",
+      "mega_goblin/hit_02.png",
+      "mega_goblin/hit_03.png"
+    ],
+    "frame_ms_proposal": [
+      80,
+      100,
+      180,
+      140
+    ],
+    "loop_in_game": false
+  },
+  "knockback": {
+    "files": [
+      "mega_goblin/knockback_00.png",
+      "mega_goblin/knockback_01.png",
+      "mega_goblin/knockback_02.png",
+      "mega_goblin/knockback_03.png"
+    ],
+    "canvas": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      109
+    ],
+    "source_facing": "left",
+    "loop_in_game": false,
+    "movement": "world position and airborne height controlled by engine; frame art only",
+    "frame_ms": "proposal; see preview"
+  },
+  "down": {
+    "files": [
+      "mega_goblin/down_00.png",
+      "mega_goblin/down_01.png",
+      "mega_goblin/down_02.png",
+      "mega_goblin/down_03.png"
+    ],
+    "canvas": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      109
+    ],
+    "source_facing": "left",
+    "loop_in_game": false,
+    "movement": "world position and airborne height controlled by engine; frame art only",
+    "frame_ms": "proposal; see preview"
+  },
+  "getup": {
+    "files": [
+      "mega_goblin/getup_00.png",
+      "mega_goblin/getup_01.png",
+      "mega_goblin/getup_02.png",
+      "mega_goblin/getup_03.png"
+    ],
+    "canvas": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      109
+    ],
+    "source_facing": "left",
+    "loop_in_game": false,
+    "movement": "world position and airborne height controlled by engine; frame art only",
+    "frame_ms": "proposal; see preview"
+  },
+  "smg": {
+    "files": [
+      "mega_goblin/smg_00.png",
+      "mega_goblin/smg_01.png",
+      "mega_goblin/smg_02.png",
+      "mega_goblin/smg_03.png"
+    ],
+    "canvas": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      109
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      220,
+      80,
+      90,
+      220
+    ],
+    "fire_frame_proposal": 1,
+    "projectile_and_impact_fx": "reuse existing weapon assets; muzzle flash in firing pose is decorative",
+    "weapon_damage": "reuse existing weapon rules; no new values assigned",
+    "walk_with_weapon": "not yet supplied"
+  },
+  "rocket": {
+    "files": [
+      "mega_goblin/rocket_00.png",
+      "mega_goblin/rocket_01.png",
+      "mega_goblin/rocket_02.png",
+      "mega_goblin/rocket_03.png"
+    ],
+    "canvas": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      109
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      450,
+      100,
+      180,
+      550
+    ],
+    "fire_frame_proposal": 1,
+    "projectile_and_impact_fx": "reuse existing weapon assets; muzzle flash in firing pose is decorative",
+    "weapon_damage": "reuse existing weapon rules; no new values assigned",
+    "walk_with_weapon": "not yet supplied"
+  },
+  "katana": {
+    "files": [
+      "mega_goblin/katana_00.png",
+      "mega_goblin/katana_01.png",
+      "mega_goblin/katana_02.png",
+      "mega_goblin/katana_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      220,
+      100,
+      90,
+      200
+    ],
+    "active_frame_proposal": 2,
+    "weapon_rules": "reuse existing matching weapon damage, reach and knockback rules; no new values assigned",
+    "fx": "reuse existing matching slash, fissure or hammer impact FX; no duplicated hit from decorative FX",
+    "loop_in_game": false,
+    "weapon_walk": "not yet supplied"
+  },
+  "axe": {
+    "files": [
+      "mega_goblin/axe_00.png",
+      "mega_goblin/axe_01.png",
+      "mega_goblin/axe_02.png",
+      "mega_goblin/axe_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      300,
+      400,
+      180,
+      350
+    ],
+    "active_frame_proposal": 2,
+    "weapon_rules": "reuse existing matching weapon damage, reach and knockback rules; no new values assigned",
+    "fx": "reuse existing matching slash, fissure or hammer impact FX; no duplicated hit from decorative FX",
+    "loop_in_game": false,
+    "weapon_walk": "not yet supplied"
+  },
+  "spear": {
+    "files": [
+      "mega_goblin/spear_00.png",
+      "mega_goblin/spear_01.png",
+      "mega_goblin/spear_02.png",
+      "mega_goblin/spear_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      250,
+      130,
+      100,
+      240
+    ],
+    "active_frame_proposal": 2,
+    "weapon_rules": "reuse existing matching weapon damage, reach and knockback rules; no new values assigned",
+    "fx": "reuse existing matching slash, fissure or hammer impact FX; no duplicated hit from decorative FX",
+    "loop_in_game": false,
+    "weapon_walk": "not yet supplied"
+  },
+  "hammer": {
+    "files": [
+      "mega_goblin/hammer_00.png",
+      "mega_goblin/hammer_01.png",
+      "mega_goblin/hammer_02.png",
+      "mega_goblin/hammer_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      350,
+      450,
+      200,
+      400
+    ],
+    "active_frame_proposal": 2,
+    "weapon_rules": "reuse existing matching weapon damage, reach and knockback rules; no new values assigned",
+    "fx": "reuse existing matching slash, fissure or hammer impact FX; no duplicated hit from decorative FX",
+    "loop_in_game": false,
+    "weapon_walk": "not yet supplied"
+  },
+  "flamethrower": {
+    "files": [
+      "mega_goblin/flamethrower_00.png",
+      "mega_goblin/flamethrower_01.png",
+      "mega_goblin/flamethrower_02.png",
+      "mega_goblin/flamethrower_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      300,
+      100,
+      100,
+      300
+    ],
+    "active_frame_proposal": 1,
+    "weapon_rules": "reuse existing matching weapon damage, reach and knockback rules; no new values assigned",
+    "fx": "reuse existing flame stream or piercing arrow; muzzle pilot flame in sprite is decorative",
+    "loop_in_game": false,
+    "weapon_walk": "not yet supplied"
+  },
+  "bow": {
+    "files": [
+      "mega_goblin/bow_00.png",
+      "mega_goblin/bow_01.png",
+      "mega_goblin/bow_02.png",
+      "mega_goblin/bow_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      250,
+      400,
+      100,
+      250
+    ],
+    "active_frame_proposal": 2,
+    "weapon_rules": "reuse existing matching weapon damage, reach and knockback rules; no new values assigned",
+    "fx": "reuse existing flame stream or piercing arrow; muzzle pilot flame in sprite is decorative",
+    "loop_in_game": false,
+    "weapon_walk": "not yet supplied"
+  },
+  "rocket_punch": {
+    "files": [
+      "mega_goblin/rocket_punch_00.png",
+      "mega_goblin/rocket_punch_01.png",
+      "mega_goblin/rocket_punch_02.png",
+      "mega_goblin/rocket_punch_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      350,
+      100,
+      350,
+      350
+    ],
+    "active_frame_proposal": 1,
+    "weapon_rules": "reuse existing matching weapon damage, reach and knockback rules; no new values assigned",
+    "fx": "reuse existing flying fist or wave beam; muzzle flash in sprite is decorative",
+    "loop_in_game": false,
+    "weapon_walk": "not yet supplied",
+    "return_synchronization": "after firing frame01, hold frame02 until existing flying fist returns; frame03 on return, not fixed animation timer"
+  },
+  "hadou_cannon": {
+    "files": [
+      "mega_goblin/hadou_cannon_00.png",
+      "mega_goblin/hadou_cannon_01.png",
+      "mega_goblin/hadou_cannon_02.png",
+      "mega_goblin/hadou_cannon_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      350,
+      500,
+      180,
+      350
+    ],
+    "active_frame_proposal": 2,
+    "weapon_rules": "reuse existing matching weapon damage, reach and knockback rules; no new values assigned",
+    "fx": "reuse existing flying fist or wave beam; muzzle flash in sprite is decorative",
+    "loop_in_game": false,
+    "weapon_walk": "not yet supplied",
+    "depletion": "existing one-shot weapon consumption; return pose is recovery only, not a second shot"
+  },
+  "death": {
+    "files": [
+      "mega_goblin/death_00.png",
+      "mega_goblin/death_01.png",
+      "mega_goblin/death_02.png",
+      "mega_goblin/death_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "order": [
+      "fatal overload",
+      "explosion and scattering mechanical parts",
+      "collapse into scrap",
+      "hold scrap",
+      "blink scrap",
+      "despawn"
+    ],
+    "fx_files": [
+      "fx/mega_explosion_00.png",
+      "fx/mega_explosion_01.png",
+      "fx/mega_explosion_02.png",
+      "fx/mega_explosion_03.png"
+    ],
+    "fx_canvas": [
+      128,
+      128
+    ],
+    "fx_origin": [
+      64,
+      64
+    ],
+    "fx_attachment_offset_from_ground": [
+      0,
+      -36
+    ],
+    "timing_ms_proposal": {
+      "overload": 400,
+      "collapse": 500,
+      "scrap_hold": 1000,
+      "blink": 1200,
+      "blink_interval": 100
+    },
+    "fx_damage": 0,
+    "disable_ai_and_collision_on_death": true,
+    "score_and_weapon_drop": "use existing rules, award/drop once at death start; never again on blink or despawn",
+    "no_revive": true,
+    "pause_freezes_all": true
+  },
+  "megamega_idle": {
+    "files": [
+      "megamega/idle_00.png",
+      "megamega/idle_01.png",
+      "megamega/idle_02.png",
+      "megamega/idle_03.png"
+    ],
+    "canvas": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      109
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": 200,
+    "loop": true
+  },
+  "megamega_walk": {
+    "files": [
+      "megamega/walk_00.png",
+      "megamega/walk_01.png",
+      "megamega/walk_02.png",
+      "megamega/walk_03.png"
+    ],
+    "canvas": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      109
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": 160,
+    "loop": true
+  },
+  "megamega_scan": {
+    "files": [
+      "megamega/scan_00.png",
+      "megamega/scan_01.png",
+      "megamega/scan_02.png",
+      "megamega/scan_03.png"
+    ],
+    "canvas": [
+      128,
+      128
+    ],
+    "origin": [
+      64,
+      109
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      300,
+      300,
+      300,
+      300
+    ],
+    "loop_in_game": false
+  },
+  "megamega_punch": {
+    "files": [
+      "megamega/punch_00.png",
+      "megamega/punch_01.png",
+      "megamega/punch_02.png",
+      "megamega/punch_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      200,
+      100,
+      150,
+      250
+    ],
+    "loop_in_game": false,
+    "damage": 8,
+    "active_frame_proposal": 2,
+    "arm": "far arm throughout; near fist remains low guarding",
+    "range": "pending; match fist extension in playtest"
+  },
+  "megamega_shoot": {
+    "files": [
+      "megamega/shoot_00.png",
+      "megamega/shoot_01.png",
+      "megamega/shoot_02.png",
+      "megamega/shoot_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "frame_ms_proposal": [
+      300,
+      250,
+      100,
+      350
+    ],
+    "loop_in_game": false,
+    "fire_frame": 2,
+    "projectile_count": 1,
+    "spawn_once_on_frame_entry": true,
+    "damage": 8,
+    "projectile": "reuse existing small enemy bullet; muzzle flash in sprite is decorative and has no separate hit",
+    "muzzle_offset_from_ground_proposal": [
+      -44,
+      -41
+    ],
+    "mirror_muzzle_x_when_facing_right": true,
+    "frequency": "occasional; AI cooldown and probability pending",
+    "projectile_speed_and_range": "pending; reuse existing enemy bullet defaults for first test",
+    "pause_freezes_animation_and_projectile": true
+  },
+  "megamega_hit": {
+    "files": [
+      "megamega/hit_00.png",
+      "megamega/hit_01.png",
+      "megamega/hit_02.png",
+      "megamega/hit_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "loop_in_game": false,
+    "timing": "initial preview proposal; game tuning pending",
+    "movement": "engine controls ground position and airborne height; do not shift sort depth using sprite top"
+  },
+  "megamega_knockback": {
+    "files": [
+      "megamega/knockback_00.png",
+      "megamega/knockback_01.png",
+      "megamega/knockback_02.png",
+      "megamega/knockback_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "loop_in_game": false,
+    "timing": "initial preview proposal; game tuning pending",
+    "movement": "engine controls ground position and airborne height; do not shift sort depth using sprite top"
+  },
+  "megamega_getup": {
+    "files": [
+      "megamega/getup_00.png",
+      "megamega/getup_01.png",
+      "megamega/getup_02.png",
+      "megamega/getup_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "loop_in_game": false,
+    "timing": "initial preview proposal; game tuning pending",
+    "movement": "engine controls ground position and airborne height; do not shift sort depth using sprite top"
+  },
+  "megamega_down": {
+    "files": [
+      "megamega/down_00.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "hold": true,
+    "body_intact": true
+  },
+  "weight_usage": "pass confirmed weights into existing enemy-weight/throw-distance calculation; do not introduce a new formula here",
+  "megamega_death": {
+    "files": [
+      "megamega/death_00.png",
+      "megamega/death_01.png",
+      "megamega/death_02.png",
+      "megamega/death_03.png"
+    ],
+    "canvas": [
+      160,
+      160
+    ],
+    "origin": [
+      96,
+      141
+    ],
+    "source_facing": "left",
+    "order": [
+      "fatal overload",
+      "explosion and white steel parts scattering",
+      "collapsed damaged wreck",
+      "red eye off and wreck hold",
+      "blink wreck",
+      "despawn"
+    ],
+    "fx_files": [
+      "fx/megamega_explosion_00.png",
+      "fx/megamega_explosion_01.png",
+      "fx/megamega_explosion_02.png",
+      "fx/megamega_explosion_03.png"
+    ],
+    "fx_canvas": [
+      128,
+      128
+    ],
+    "fx_origin": [
+      64,
+      64
+    ],
+    "fx_attachment_offset_from_ground": [
+      0,
+      -40
+    ],
+    "timing_ms_proposal": {
+      "overload": 400,
+      "collapse": 500,
+      "wreck_hold": 1000,
+      "blink": 1200,
+      "blink_interval": 100
+    },
+    "fx_damage": 0,
+    "disable_ai_and_collision_on_death": true,
+    "score": "award once using existing rule; do not award again on blink/despawn",
+    "no_revive": true,
+    "pause_freezes_all": true
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "scope": "Mika grapple throw horizontal displacement only",
+  "reference": "Capture current default goblin throw horizontal distance as D0 once before applying this change.",
+  "formula": "distance = D0 * 2 * 10 / weight",
+  "range": [
+    10,
+    20
+  ],
+  "confirmed": {
+    "goblin": {
+      "weight": 10,
+      "distance_vs_old_goblin": 2
+    },
+    "gigas": {
+      "weight": 20,
+      "distance_vs_old_goblin": 1,
+      "distance_vs_new_goblin": 0.5
+    },
+    "mega_goblin": {
+      "weight": 15,
+      "distance_vs_old_goblin": 1.3333333333333333
+    },
+    "megamega": {
+      "weight": 18,
+      "distance_vs_old_goblin": 1.1111111111111112
+    }
+  },
+  "proposed_family_weights": {
+    "goblin": 10,
+    "deathhound": 11,
+    "skeleton": 12,
+    "ogre": 15,
+    "gigas": 20
+  },
+  "proposal_status": "Goblin10/gigas20/mega_goblin15/megamega18 confirmed; other intermediate values remain proposals.",
+  "proposed_inheritance": {
+    "hobgoblin": "goblin",
+    "death_goblin": "goblin",
+    "dark_goblin": "goblin",
+    "ograst": "ogre",
+    "big_ogre": "ogre",
+    "ogyar": "ogre",
+    "hill_gigas": "gigas",
+    "yor_gigas": "gigas",
+    "papa_gigas": "gigas"
+  },
+  "boss_policy": "Do not make a boss throwable merely by adding weight. Preserve existing eligibility; boss weight remains unset.",
+  "application": "Use weight when resolving a successful grapple throw. Preserve existing grapple eligibility, release frame, thrown-body collateral hit behavior, damage and invulnerability.",
+  "trajectory_proposal": "Keep existing flight duration and arc height initially; scale horizontal travel/velocity to achieve distance. Verify against actual physics. Do not extend hang time simply to double distance.",
+  "boundary_policy": "Requested distance is unobstructed target distance; existing collision and world boundaries may shorten it.",
+  "not_applied_to": [
+    "normal hit knockback",
+    "uppercut",
+    "somersault",
+    "jump physics",
+    "throw damage",
+    "HP"
+  ],
+  "migration": "Never multiply an already adjusted D0 again on reload or repeated patch application. Store original baseline separately.",
+  "reference_examples": [
+    {
+      "D0": 80,
+      "weight": 10,
+      "distance": 160
+    },
+    {
+      "D0": 80,
+      "weight": 15,
+      "distance": 106.6666666667
+    },
+    {
+      "D0": 80,
+      "weight": 20,
+      "distance": 80
+    }
+  ]
+}

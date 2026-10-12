@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "native_resolution": [
+    384,
+    216
+  ],
+  "assets": {
+    "go": {
+      "file": "ui/go_arrow.png",
+      "canvas": [
+        72,
+        24
+      ],
+      "origin": [
+        36,
+        12
+      ],
+      "display_center_proposal": [
+        330,
+        100
+      ],
+      "blink_ms": [
+        250,
+        150
+      ],
+      "loop_by_engine": true
+    },
+    "clear": {
+      "file": "ui/stage_clear.png",
+      "canvas": [
+        216,
+        32
+      ],
+      "origin": [
+        108,
+        16
+      ],
+      "display_center_proposal": [
+        192,
+        78
+      ],
+      "animation_by_engine": "brief entry and hold; no opaque backing panel"
+    }
+  },
+  "render": "source-over, nearest-neighbor; no black backing",
+  "positions_status": "initial proposal; adjust around HUD and Mika face"
+}

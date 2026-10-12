@@ -1,0 +1,159 @@
+{
+  "version": 2,
+  "native_resolution": [
+    384,
+    216
+  ],
+  "additive_pack": true,
+  "proposals": true,
+  "effects": {
+    "2A": {
+      "sandstorm": {
+        "interval_seconds": [
+          18,
+          35
+        ],
+        "duration_seconds": 5,
+        "opacity_max": 0.2,
+        "visual_only": true
+      },
+      "shooting_star": {
+        "interval_seconds": [
+          12,
+          28
+        ],
+        "duration_seconds": 0.65,
+        "sky_only": true
+      }
+    },
+    "2B": {
+      "fluorescent": {
+        "frames": 4,
+        "interval_seconds": [
+          8,
+          18
+        ],
+        "flicker_duration_seconds": 0.28,
+        "anchor": "carriage",
+        "impact_offset_applies": true,
+        "world_points": [
+          [
+            45,
+            7
+          ],
+          [
+            140,
+            7
+          ],
+          [
+            245,
+            7
+          ],
+          [
+            333,
+            7
+          ]
+        ]
+      }
+    },
+    "2C": {
+      "monitor": {
+        "frames": 8,
+        "fps": 8,
+        "screen_insert_only": true,
+        "flicker": {
+          "interval_seconds": [
+            9,
+            22
+          ],
+          "duration_seconds": 0.32,
+          "max_dim_opacity": 0.48,
+          "one_screen_per_event": true
+        }
+      },
+      "bubbles": {
+        "frames": 8,
+        "fps": 8,
+        "clip_to_existing_glass": true
+      },
+      "fluorescent_flicker": {
+        "interval_seconds": [
+          14,
+          28
+        ],
+        "duration_seconds": 0.32,
+        "max_dim_opacity": 0.42,
+        "one_fixture_per_event": true,
+        "rectangles": "labLights parameter, world coordinates, emitted strip only"
+      }
+    }
+  },
+  "props": {
+    "hp": 1,
+    "destroy_score": 100,
+    "item_drop_chance": 0.2,
+    "item_table": "existing_stage_table",
+    "damaged_frame": "brief visual only; does not require extra hit",
+    "spawn_enemy": false,
+    "collision": "base footprint only"
+  },
+  "placement_proposals": [
+    {
+      "map": "2A",
+      "type": "moai",
+      "foot": [
+        260,
+        182
+      ]
+    },
+    {
+      "map": "2A",
+      "type": "moai",
+      "foot": [
+        1070,
+        186
+      ]
+    },
+    {
+      "map": "2B",
+      "type": "cabinet",
+      "foot": [
+        304,
+        184
+      ],
+      "fixed_to_carriage": true
+    },
+    {
+      "map": "2C",
+      "type": "terminal",
+      "foot": [
+        260,
+        182
+      ]
+    },
+    {
+      "map": "2C",
+      "type": "terminal",
+      "foot": [
+        880,
+        184
+      ]
+    },
+    {
+      "map": "2C",
+      "type": "terminal",
+      "foot": [
+        1290,
+        184
+      ]
+    }
+  ],
+  "preserve": [
+    "2A final entrance",
+    "2B left/right door lanes",
+    "2C hatch at x1008",
+    "2C enemy cylinders x706 and1472",
+    "boss arena free central lane"
+  ],
+  "pause_freezes_all": true
+}

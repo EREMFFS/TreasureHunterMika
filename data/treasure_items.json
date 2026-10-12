@@ -1,0 +1,280 @@
+{
+  "source": "宝箱、アイテム等.xlsx / 宝箱 B8:D23",
+  "gameplay_implemented": false,
+  "items": [
+    {
+      "id": "money_bag",
+      "name": "ドル袋",
+      "score": 1000,
+      "file": "item_money_bag.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "banknotes",
+      "name": "札束",
+      "score": 10000,
+      "file": "item_banknotes.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "cash_suitcase",
+      "name": "スーツケース",
+      "score": 100000,
+      "file": "item_cash_suitcase.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "ring",
+      "name": "指輪",
+      "score": 2000,
+      "file": "item_ring.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "gem",
+      "name": "宝石",
+      "score": 3000,
+      "file": "item_gem.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "bracelet",
+      "name": "ブレスレット",
+      "score": 4000,
+      "file": "item_bracelet.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "necklace",
+      "name": "ネックレス",
+      "score": 7000,
+      "file": "item_necklace.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "gold_statue",
+      "name": "金の彫像",
+      "score": 8000,
+      "file": "item_gold_statue.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "crown",
+      "name": "王冠",
+      "score": 20000,
+      "file": "item_crown.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "diamond",
+      "name": "ダイヤモンド",
+      "score": 25000,
+      "file": "item_diamond.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "game_cartridge",
+      "name": "ゲームソフト",
+      "score": 5000,
+      "file": "item_game_cartridge.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "game_console",
+      "name": "ゲーム機",
+      "score": 15000,
+      "file": "item_game_console.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "ace_hearts",
+      "name": "ハートのエース",
+      "score": 300000,
+      "file": "item_ace_hearts.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "ace_spades",
+      "name": "スペードのエース",
+      "score": 300000,
+      "file": "item_ace_spades.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "ace_clubs",
+      "name": "クローバーのエース",
+      "score": 300000,
+      "file": "item_ace_clubs.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "ace_diamonds",
+      "name": "ダイヤのエース",
+      "score": 300000,
+      "file": "item_ace_diamonds.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_only"
+    },
+    {
+      "id": "chocolate",
+      "name": "チョコレート",
+      "score": 100,
+      "file": "item_chocolate.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_and_heal",
+      "heal_fraction": 0.05,
+      "source": "existing chests.json weighted_items"
+    },
+    {
+      "id": "apple",
+      "name": "りんご",
+      "score": 200,
+      "file": "item_apple.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "origin": [
+        16,
+        32
+      ],
+      "effect": "score_and_heal",
+      "heal_fraction": 0.1,
+      "source": "existing chests.json weighted_items"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+ "id": "dandalmon",
+ "stage": 4,
+ "display_name": "ダンダルモン",
+ "epithet": "巨大人面要塞",
+ "fade_ms": 700,
+ "epithet_step_ms": 140,
+ "line_gap_ms": 100,
+ "name_step_ms": 180,
+ "hold_ms": 1200,
+ "burst_ms": 350,
+ "timings_are_proposals": true,
+ "epithet_glyphs": [
+  {
+   "char": "巨",
+   "path": "ui/dand_epithet_00.png",
+   "x": 108,
+   "y": 68,
+   "width": 28,
+   "height": 28
+  },
+  {
+   "char": "大",
+   "path": "ui/dand_epithet_01.png",
+   "x": 136,
+   "y": 68,
+   "width": 28,
+   "height": 28
+  },
+  {
+   "char": "人",
+   "path": "ui/dand_epithet_02.png",
+   "x": 164,
+   "y": 68,
+   "width": 28,
+   "height": 28
+  },
+  {
+   "char": "面",
+   "path": "ui/dand_epithet_03.png",
+   "x": 192,
+   "y": 68,
+   "width": 28,
+   "height": 28
+  },
+  {
+   "char": "要",
+   "path": "ui/dand_epithet_04.png",
+   "x": 220,
+   "y": 68,
+   "width": 28,
+   "height": 28
+  },
+  {
+   "char": "塞",
+   "path": "ui/dand_epithet_05.png",
+   "x": 248,
+   "y": 68,
+   "width": 28,
+   "height": 28
+  }
+ ],
+ "name_glyphs": [
+  {
+   "char": "ダ",
+   "path": "ui/dand_name_00.png",
+   "x": 60,
+   "y": 100,
+   "width": 44,
+   "height": 44
+  },
+  {
+   "char": "ン",
+   "path": "ui/dand_name_01.png",
+   "x": 104,
+   "y": 100,
+   "width": 44,
+   "height": 44
+  },
+  {
+   "char": "ダ",
+   "path": "ui/dand_name_02.png",
+   "x": 148,
+   "y": 100,
+   "width": 44,
+   "height": 44
+  },
+  {
+   "char": "ル",
+   "path": "ui/dand_name_03.png",
+   "x": 192,
+   "y": 100,
+   "width": 44,
+   "height": 44
+  },
+  {
+   "char": "モ",
+   "path": "ui/dand_name_04.png",
+   "x": 236,
+   "y": 100,
+   "width": 44,
+   "height": 44
+  },
+  {
+   "char": "ン",
+   "path": "ui/dand_name_05.png",
+   "x": 280,
+   "y": 100,
+   "width": 44,
+   "height": 44
+  }
+ ],
+ "entrance": {
+  "rumble_ms": 1100,
+  "look_flip_ms": 280,
+  "shutter_rise_ms": 1500,
+  "after_open_ms": 350,
+  "note": "[仮] v010 の流れ（ゴゴゴ→裏に出現→シャッターとレールが真上へ→驚く）"
+ },
+ "shutter": {
+  "top_left_closed": [
+   222,
+   -77
+  ],
+  "size": [
+   200,
+   264
+  ],
+  "left_rail_width": 9,
+  "slats_start_x": 230,
+  "right_edge_world_beyond_camera_x": 421,
+  "foot_y": 187,
+  "rise_pixels": 264,
+  "left_rail_moves_with_shutter": true,
+  "fully_offscreen_when_open": true,
+  "no_persistent_frame_or_post": true
+ },
+ "boss_placement": {
+  "top_left_preview": [
+   235,
+   13
+  ],
+  "feet_y": 181,
+  "previous_map_proposal_world_anchor": [
+   1810,
+   166
+  ],
+  "new_proposed_world_anchor_if_top_left": [
+   1771,
+   181
+  ]
+ },
+ "pre_intro_blocker": {
+  "screen_x": [
+   222,
+   383
+  ],
+  "walkable_y": [
+   154,
+   198
+  ],
+  "solid": true,
+  "reason": "player cannot enter shutter footprint before event; clamp to visible map edge"
+ },
+ "source": "MIKA_DANDALMON_SHUTTER_INTRO_v010"
+}

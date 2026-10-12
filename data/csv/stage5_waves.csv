@@ -1,0 +1,109 @@
+﻿section_id,order,group,spawn_when_alive_le,enemy_id,weapon_id,quantity,spawn_side,lane,drop_weapon,weapon_source,appearance,source,status
+A1,1,1,9,mega_goblin,none,1,right,,False,,standard,5A v001 5A_01_enemy_01,[仮] 提案配置
+A1,2,1,9,mega_goblin,none,1,right,,False,,standard,5A v001 5A_01_enemy_02,[仮] 提案配置
+A1,3,1,9,mega_goblin,katana,1,left,,True,5A_01_enemy_03,standard,5A v001 5A_01_enemy_03,[仮] 提案配置
+A1,4,2,2,mega_goblin,none,1,right,,False,,standard,5A v001 5A_01_enemy_04,[仮] 提案配置
+A1,5,2,2,ashiin,none,1,right,,False,,standard,5A v001 5A_01_enemy_05 / 2026-10-11 アシーンに差し替え,[仮] 提案配置
+A2,1,1,9,megamega,none,1,right,,False,,standard,5A v001 5A_02_enemy_01,[仮] 提案配置
+A2,2,1,9,megamega,none,1,right,,False,,standard,5A v001 5A_02_enemy_02,[仮] 提案配置
+A2,3,1,9,megamega,none,1,left,,False,,standard,5A v001 5A_02_enemy_03,[仮] 提案配置
+A2,4,2,2,ashiin,none,1,right,,False,,standard,5A v001 5A_02_enemy_04 / 2026-10-11 アシーンに差し替え,[仮] 提案配置
+A2,5,2,2,mega_goblin,machinegun,1,right,,True,5A_02_enemy_05,standard,5A v001 5A_02_enemy_05,[仮] 提案配置
+A3,1,1,9,mega_goblin,none,1,right,,False,,standard,5A v001 5A_03_enemy_01,[仮] 提案配置
+A3,2,1,9,mega_goblin,none,1,right,,False,,standard,5A v001 5A_03_enemy_02,[仮] 提案配置
+A3,3,1,9,mega_goblin,none,1,left,,False,,standard,5A v001 5A_03_enemy_03,[仮] 提案配置
+A3,4,2,2,mega_goblin,none,1,right,,False,,standard,5A v001 5A_03_enemy_04,[仮] 提案配置
+A3,5,2,2,ashiin,none,1,right,,False,,standard,5A v001 5A_03_enemy_05 / 2026-10-11 アシーンに差し替え,[仮] 提案配置
+A4,1,1,9,megamega,none,1,right,,False,,standard,5A v001 5A_04_enemy_01,[仮] 提案配置
+A4,2,1,9,megamega,none,1,right,,False,,standard,5A v001 5A_04_enemy_02,[仮] 提案配置
+A4,3,1,9,megamega,none,1,left,,False,,standard,5A v001 5A_04_enemy_03,[仮] 提案配置
+A4,4,2,2,ashiin,none,1,right,,False,,standard,5A v001 5A_04_enemy_04 / 2026-10-11 アシーンに差し替え,[仮] 提案配置
+A4,5,2,2,mega_goblin,rocket_launcher,1,right,,True,5A_04_enemy_05,standard,5A v001 5A_04_enemy_05,[仮] 提案配置
+B1,1,1,1,mega_goblin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B1,2,1,1,mega_goblin,machinegun,1,right,lower,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B1,3,2,1,megamega,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B1,4,2,1,kaon,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B1_travel,1,1,1,mega_goblin,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B1_travel,2,1,1,ashiin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B2,1,1,1,megamega,katana,1,right,upper,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B2,2,1,1,ashiin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B2,3,2,1,death_goblin,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B2_travel,1,1,1,mega_goblin,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B2_travel,2,1,1,mega_goblin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B3,1,1,1,megamega,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B3,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B3,3,2,1,death_goblin,rocket_launcher,1,right,middle,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+B3,4,2,1,tsugira,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C1,1,1,1,mega_goblin,machinegun,1,right,upper,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C1,2,1,1,ashiin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C1,3,2,1,megamega,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C1_travel,1,1,1,ashiin,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C1_travel,2,1,1,death_goblin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C2,1,1,1,mega_goblin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C2,2,1,1,megamega,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C2,3,2,1,kaon,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C2,4,2,1,death_goblin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C2_travel,1,1,1,mega_goblin,katana,1,left,upper,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C2_travel,2,1,1,megamega,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C3,1,1,1,megamega,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C3,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+C3,3,2,1,tsugira,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+D1,1,1,1,mega_goblin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+D1,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+D1,3,2,1,death_goblin,machinegun,1,right,middle,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E1,1,1,1,mega_goblin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E1,2,1,1,mega_goblin,flamethrower,1,right,lower,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E1,3,2,1,ashiin,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E1,4,2,1,death_goblin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E1_travel,1,1,1,mega_goblin,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E1_travel,2,1,1,megamega,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E2,1,1,1,megamega,battle_hammer,1,right,upper,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E2,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E2,3,2,1,death_goblin,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E2_travel,1,1,1,ashiin,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E2_travel,2,1,1,death_goblin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E3,1,1,1,mega_goblin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E3,2,1,1,megamega,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E3,3,2,1,kaon,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+E3,4,2,1,tsugira,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F1,1,1,1,kaon,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F1,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F1,3,2,1,megamega,machinegun,1,right,middle,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F1,4,2,1,ashiin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F1_travel,1,1,1,kaon,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F1_travel,2,1,1,death_goblin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F2,1,1,1,ashiin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F2,2,1,1,kaon,rocket_launcher,1,right,lower,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F2,3,2,1,death_goblin,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F2,4,2,1,megamega,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F2_travel,1,1,1,kaon,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F2_travel,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F3,1,1,1,ashiin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F3,2,1,1,ashiin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F3,3,2,1,megamega,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+F3,4,2,1,death_goblin,katana,1,right,upper,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G1,1,1,1,megamega,battle_hammer,1,right,upper,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G1,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G1,3,2,1,death_goblin,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G1_travel,1,1,1,mega_goblin,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G1_travel,2,1,1,ashiin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G2,1,1,1,mega_goblin,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G2,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G2,3,2,1,death_goblin,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+G2,4,2,1,tsugira,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H1,1,1,1,kaon,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H1,2,1,1,mega_goblin,machinegun,1,right,lower,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H1,3,2,1,megamega,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H1,4,2,1,tsugira,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H1_travel,1,1,1,ashiin,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H1_travel,2,1,1,death_goblin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H2,1,1,1,megamega,war_axe,1,right,upper,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H2,2,1,1,ashiin,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H2,3,2,1,death_goblin,none,1,right,middle,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H2,4,2,1,tsugira,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H2_travel,1,1,1,mega_goblin,none,1,left,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H2_travel,2,1,1,megamega,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H3,1,1,1,megamega,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H3,2,1,1,kaon,none,1,right,lower,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H3,3,2,1,tsugira,rocket_launcher,1,right,middle,True,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]
+H3,4,2,1,tsugira,none,1,right,upper,False,,standard,2026-10-10 5面 仮配置（PPTの段数）,[仮]

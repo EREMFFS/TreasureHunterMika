@@ -1,0 +1,101 @@
+{
+  "confirmed": [
+    "moves only by warp; no walking",
+    "random legal destination; face Mika on arrival",
+    "one fire/lightning/laugh action after each warp, then warp again",
+    "fire fans in three ground-plane directions at fixed head height; slide/crouch and jump dodge",
+    "lightning strikes from overhead with advance ground shadow",
+    "laugh is a wasted action with no damage",
+    "late phase faster, laughs less",
+    "fire damage 8; lightning damage 15 (initial playtest values)",
+    "hostile goblins interfere during boss combat; become nonhostile ending actors only after queen defeat"
+  ],
+  "state_order": [
+    "warp_out",
+    "hidden_relocate",
+    "warp_in",
+    "face_mika",
+    "choose_one_action",
+    "windup",
+    "action",
+    "recovery",
+    "warp_out"
+  ],
+  "fire": {
+    "count": 3,
+    "coordinate_system": "x,y are ground coordinates; z is height above floor; screenY=y-z",
+    "ground_fan_angles_degrees_proposal": [
+      -16,
+      0,
+      16
+    ],
+    "fixed_z_proposal": 30,
+    "avoidance": "slide/crouch under projectile; jump above it. Do not draw fan as three different heights.",
+    "damage": 8
+  },
+  "lightning": {
+    "warning": "dark shadow on ground BEFORE strike",
+    "target": "snapshot Mika ground position when warning starts; no tracking after warning",
+    "avoidance": "move out of shadow; jumping inside lightning column does not dodge",
+    "damage": 8
+  },
+  "proposals_only": {
+    "late_phase_hp_ratio": 0.5,
+    "early": {
+      "weights": {
+        "fire": 0.4,
+        "lightning": 0.4,
+        "laugh": 0.2
+      },
+      "warp_out_ms": 240,
+      "hidden_ms": 160,
+      "warp_in_ms": 240,
+      "windup_ms": 600,
+      "recovery_ms": 650
+    },
+    "late": {
+      "weights": {
+        "fire": 0.48,
+        "lightning": 0.48,
+        "laugh": 0.04
+      },
+      "warp_out_ms": 180,
+      "hidden_ms": 120,
+      "warp_in_ms": 180,
+      "windup_ms": 450,
+      "recovery_ms": 400
+    },
+    "lightning_shadow_ms": 700,
+    "warp_destination_bounds_world": [
+      1584,
+      1872,
+      164,
+      197
+    ],
+    "minimum_mika_separation_px": 64,
+    "invulnerable_only_while_hidden": true
+  },
+  "render": {
+    "canvas": [
+      96,
+      96
+    ],
+    "origin": [
+      48,
+      86
+    ],
+    "source_facing": "left",
+    "mirror_if_mika_x_greater_than_queen_x": true,
+    "warp": "fade queen during warp_out; invisible relocate; reverse fade at warp_in; use fx/warp_*.png",
+    "never_slide_seated_sprite_for_movement": true
+  },
+  "shared": "pause freezes AI, spells and preview timers; reuse existing intro/BGM/defeat slow rules",
+  "adds": {
+    "type": "goblin",
+    "hostile_during_boss_combat": true,
+    "count": "pending",
+    "respawn": "pending",
+    "placement": "pending",
+    "on_queen_defeat": "stop hostile attacks and spawning before existing begging/lineup cutscene; use ending actor handling"
+  }
+}

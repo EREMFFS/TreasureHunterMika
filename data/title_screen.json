@@ -1,0 +1,38 @@
+{
+  "canvas": [
+    384,
+    216
+  ],
+  "background": "title_background_384.png",
+  "title": "TREASURE HUNTER MIKA",
+  "character_layers": [
+    {
+      "file": "mika_idle_00.png",
+      "scale": 2,
+      "canvas_position": [
+        42,
+        33
+      ]
+    },
+    {
+      "file": "robot_idle_00.png",
+      "scale": 2,
+      "canvas_position": [
+        150,
+        33
+      ]
+    }
+  ],
+  "ground_y": 187,
+  "start_prompt": "PRESS START",
+  "preview_only": true,
+  "menu_input_not_implemented": true,
+  "canonical_assets": {
+    "background": "title_background_384.png",
+    "composite_preview": "title_screen_384.png"
+  },
+  "deprecated_aliases": {
+    "title_background_384_v101.png": "title_background_384.png"
+  },
+  "render_note": "composite_preview使用時はミカ・ロボ・PRESS STARTを二重描画しない。background使用時はcharacter_layersとstart_promptを重ねる。"
+}

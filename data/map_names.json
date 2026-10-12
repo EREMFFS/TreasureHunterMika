@@ -1,0 +1,103 @@
+{
+ "version": 1,
+ "stages": [
+  {
+   "stage_id": 1,
+   "world_name": "ナンザスシティ",
+   "maps": {
+    "A": "ナンザスシティ",
+    "B": "オラクル百貨店",
+    "C": "ナンザスシティ"
+   }
+  },
+  {
+   "stage_id": 2,
+   "world_name": "モアイ荒野",
+   "maps": {
+    "A": "モアイ荒野",
+    "B": "ヒミツ研究所入り口",
+    "C": "ヒミツ研究所"
+   }
+  },
+  {
+   "stage_id": 3,
+   "world_name": "妖精の国",
+   "maps": {
+    "A": "マヨイの森",
+    "B": "雲の上",
+    "C": "妖精の城"
+   }
+  },
+  {
+   "stage_id": 4,
+   "world_name": "空中鉄道777",
+   "number_reading": "スリーセブン",
+   "maps": {
+    "A": "空中鉄道777 屋根",
+    "B": "空中鉄道777 車両",
+    "C": "デスポリス駅"
+   },
+   "map_names_status": "not_finalized"
+  },
+  {
+   "stage_id": 5,
+   "world_name": "デスポリス",
+   "maps": {
+    "A": "ヴァンパイアステートビル 1F",
+    "B": "VSビル13F",
+    "C": "VSビル37F",
+    "D": "連絡通路",
+    "E": "バブイルトレンドセンター37F",
+    "F": "BTセンター99F",
+    "G": "連絡通路",
+    "H": "VSビル99F",
+    "I": "展望台",
+    "J": "デスポリス 宝物庫"
+   },
+   "map_names_status": "[仮] 5面v001素材のmap.json・PPTから"
+  },
+  {
+   "stage_id": 6,
+   "world_name": "脱出",
+   "maps": {
+    "A": "デスポリス 宝物庫",
+    "B": "脱出！ 展望台",
+    "C": "脱出！ VSビル99F",
+    "D": "脱出！ VSビル37F",
+    "E": "脱出！ VSビル13F",
+    "F": "脱出！ ヴァンパイアステートビル 1F"
+   },
+   "map_names_status": "[仮] PPTから"
+  }
+ ],
+ "notation_interpretation": "First-stage labels 1A/2A/3A interpreted as stage1 maps A/B/C in their supplied order.",
+ "intro": {
+  "trigger": "enter a main map A/B/C, not each combat scene or travel section",
+  "position_proposal": {
+   "x": 16,
+   "baseline_y": 204,
+   "align": "left",
+   "font_native_px": 12
+  },
+  "delay_ms": 150,
+  "per_character_ms": 80,
+  "hold_ms": 1500,
+  "fade_ms": 300,
+  "timing_status": "initial proposal",
+  "pause_with_game": true,
+  "block_player_input": false,
+  "pause_time_counter": false,
+  "background_panel": false,
+  "text_color": "#fff5c5",
+  "outline_color": "#101729",
+  "shadow_offset": [
+   1,
+   1
+  ],
+  "font": "reuse actual game Japanese-capable pixel font; system font in preview is a placeholder",
+  "hide_on_map_exit": true,
+  "repeat_on_hidden_room_return": false,
+  "cursor": false,
+  "character_sound": "not specified; no new sound added"
+ }
+}

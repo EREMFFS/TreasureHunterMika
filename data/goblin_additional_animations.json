@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "enemy_id": "goblin",
+  "animations": {
+    "getup": {
+      "frames": 3,
+      "canvas": [
+        96,
+        96
+      ],
+      "origin": [
+        48,
+        77
+      ],
+      "frame_origins": [
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ]
+      ],
+      "facing": "left",
+      "mirror_for_right": true,
+      "sheet": "goblin_getup_sheet.png",
+      "duration_ms": [
+        160,
+        160,
+        120
+      ],
+      "loop": false,
+      "preview_loops_only": true,
+      "scale": 0.13881748071979436,
+      "phases": [
+        "sit_up",
+        "one_knee",
+        "guard"
+      ],
+      "starts_from": "goblin_downed.png",
+      "next_state": "idle"
+    },
+    "katana": {
+      "frames": 4,
+      "canvas": [
+        96,
+        96
+      ],
+      "origin": [
+        48,
+        77
+      ],
+      "frame_origins": [
+        [
+          48,
+          77
+        ],
+        [
+          50,
+          77
+        ],
+        [
+          60,
+          77
+        ],
+        [
+          48,
+          77
+        ]
+      ],
+      "facing": "left",
+      "mirror_for_right": true,
+      "sheet": "goblin_katana_sheet.png",
+      "duration_ms": [
+        240,
+        90,
+        120,
+        170
+      ],
+      "loop": false,
+      "preview_loops_only": true,
+      "scale": 0.17307692307692307,
+      "phases": [
+        "telegraph",
+        "downstroke",
+        "followthrough",
+        "ready"
+      ],
+      "active_frames": [
+        1
+      ],
+      "weapon_id": "katana",
+      "hitstop_baked_in": false,
+      "next_state": "weapon_ready"
+    },
+    "rocket_launcher": {
+      "frames": 3,
+      "canvas": [
+        96,
+        96
+      ],
+      "origin": [
+        48,
+        77
+      ],
+      "frame_origins": [
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          48,
+          77
+        ]
+      ],
+      "facing": "left",
+      "mirror_for_right": true,
+      "sheet": "goblin_rocket_launcher_sheet.png",
+      "duration_ms": [
+        220,
+        280,
+        180
+      ],
+      "loop": false,
+      "preview_loops_only": true,
+      "scale": 0.17647058823529413,
+      "phases": [
+        "ready",
+        "aim",
+        "recoil"
+      ],
+      "fire_event_frame": 2,
+      "muzzle_points": [
+        [
+          17,
+          43
+        ],
+        [
+          17,
+          47
+        ],
+        [
+          14,
+          44
+        ]
+      ],
+      "weapon_id": "rocket_launcher",
+      "projectile_baked_in": false,
+      "next_state": "weapon_ready"
+    }
+  },
+  "timing_status": "initial animation timings; not balancing changes",
+  "damage_and_uses_source": "existing weapon_balance.json; do not overwrite",
+  "hitboxes_status": "Claude must define active hitboxes and test in game",
+  "muzzle_points_status": "initial local cell coordinates; verify projectile origin in runtime"
+}

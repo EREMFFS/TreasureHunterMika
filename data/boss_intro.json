@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "native_size": [
+    384,
+    216
+  ],
+  "timings_are_proposals": true,
+  "bosses": [
+    {
+      "id": "goblin_robot",
+      "stage": 1,
+      "display_name": "ゴブリンメカ",
+      "epithet": "乗降機械",
+      "fade_ms": 700,
+      "epithet_step_ms": 140,
+      "line_gap_ms": 100,
+      "name_step_ms": 180,
+      "hold_ms": 1200,
+      "burst_ms": 350,
+      "epithet_glyphs": [
+        {
+          "char": "乗",
+          "path": "ui/boss1_epithet_00.png",
+          "x": 132,
+          "y": 68,
+          "width": 28,
+          "height": 28
+        },
+        {
+          "char": "降",
+          "path": "ui/boss1_epithet_01.png",
+          "x": 162,
+          "y": 68,
+          "width": 28,
+          "height": 28
+        },
+        {
+          "char": "機",
+          "path": "ui/boss1_epithet_02.png",
+          "x": 192,
+          "y": 68,
+          "width": 28,
+          "height": 28
+        },
+        {
+          "char": "械",
+          "path": "ui/boss1_epithet_03.png",
+          "x": 222,
+          "y": 68,
+          "width": 28,
+          "height": 28
+        }
+      ],
+      "name_glyphs": [
+        {
+          "char": "ゴ",
+          "path": "ui/boss1_name_00.png",
+          "x": 60,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "ブ",
+          "path": "ui/boss1_name_01.png",
+          "x": 104,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "リ",
+          "path": "ui/boss1_name_02.png",
+          "x": 148,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "ン",
+          "path": "ui/boss1_name_03.png",
+          "x": 192,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "メ",
+          "path": "ui/boss1_name_04.png",
+          "x": 236,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "カ",
+          "path": "ui/boss1_name_05.png",
+          "x": 280,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "hold_starts": "last_name_glyph_appears",
+      "source_facing": "left",
+      "preview_facing": "left",
+      "preview_flip_x": false
+    },
+    {
+      "id": "dark_mika",
+      "stage": 2,
+      "display_name": "ダークミカ",
+      "epithet": "改造人間",
+      "fade_ms": 700,
+      "epithet_step_ms": 140,
+      "line_gap_ms": 100,
+      "name_step_ms": 180,
+      "hold_ms": 1200,
+      "burst_ms": 350,
+      "epithet_glyphs": [
+        {
+          "char": "改",
+          "path": "ui/boss2_epithet_00.png",
+          "x": 132,
+          "y": 68,
+          "width": 28,
+          "height": 28
+        },
+        {
+          "char": "造",
+          "path": "ui/boss2_epithet_01.png",
+          "x": 162,
+          "y": 68,
+          "width": 28,
+          "height": 28
+        },
+        {
+          "char": "人",
+          "path": "ui/boss2_epithet_02.png",
+          "x": 192,
+          "y": 68,
+          "width": 28,
+          "height": 28
+        },
+        {
+          "char": "間",
+          "path": "ui/boss2_epithet_03.png",
+          "x": 222,
+          "y": 68,
+          "width": 28,
+          "height": 28
+        }
+      ],
+      "name_glyphs": [
+        {
+          "char": "ダ",
+          "path": "ui/boss2_name_00.png",
+          "x": 82,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "ー",
+          "path": "ui/boss2_name_01.png",
+          "x": 126,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "ク",
+          "path": "ui/boss2_name_02.png",
+          "x": 170,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "ミ",
+          "path": "ui/boss2_name_03.png",
+          "x": 214,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "char": "カ",
+          "path": "ui/boss2_name_04.png",
+          "x": 258,
+          "y": 100,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "hold_starts": "last_name_glyph_appears",
+      "source_facing": "right",
+      "preview_facing": "left",
+      "preview_flip_x": true
+    }
+  ],
+  "facing_rule": {
+    "actors_look_at_boss": true,
+    "boss_looks_at_mika": true,
+    "resolve_per_sprite_source_facing": true,
+    "apply_before_entrance_and_on_landing": true,
+    "do_not_assume_every_source_faces_right": true
+  }
+}

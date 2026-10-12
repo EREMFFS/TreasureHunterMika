@@ -1,0 +1,158 @@
+{
+  "id": "goblin_queen",
+  "stage": 3,
+  "display_name": "ゴブリンクイーン",
+  "epithet": "大魔女王",
+  "fade_ms": 700,
+  "epithet_step_ms": 140,
+  "line_gap_ms": 100,
+  "name_step_ms": 180,
+  "hold_ms": 1200,
+  "burst_ms": 350,
+  "timings_are_proposals": true,
+  "entrance": {
+    "rise_ms": 1200,
+    "laugh_ms": 800,
+    "source_facing": "left",
+    "mika_facing": "right",
+    "robot_facing": "right",
+    "rise_frames": [
+      "boss/queen_rise_00.png",
+      "boss/queen_rise_01.png",
+      "boss/queen_rise_02.png",
+      "boss/queen_rise_03.png"
+    ],
+    "rise_foot_frames": [
+      [
+        1824,
+        167
+      ],
+      [
+        1824,
+        172
+      ],
+      [
+        1824,
+        181
+      ],
+      [
+        1824,
+        187
+      ]
+    ],
+    "waiting_pose": "boss/queen_rise_00.png",
+    "combat_idle": "boss/queen_idle_00.png",
+    "foot_at_title": [
+      1824,
+      187
+    ]
+  },
+  "epithet_glyphs": [
+    {
+      "char": "大",
+      "path": "ui/queen_epithet_00.png",
+      "x": 132,
+      "y": 68,
+      "width": 28,
+      "height": 28
+    },
+    {
+      "char": "魔",
+      "path": "ui/queen_epithet_01.png",
+      "x": 162,
+      "y": 68,
+      "width": 28,
+      "height": 28
+    },
+    {
+      "char": "女",
+      "path": "ui/queen_epithet_02.png",
+      "x": 192,
+      "y": 68,
+      "width": 28,
+      "height": 28
+    },
+    {
+      "char": "王",
+      "path": "ui/queen_epithet_03.png",
+      "x": 222,
+      "y": 68,
+      "width": 28,
+      "height": 28
+    }
+  ],
+  "name_glyphs": [
+    {
+      "char": "ゴ",
+      "path": "ui/queen_name_00.png",
+      "x": 16,
+      "y": 100,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "char": "ブ",
+      "path": "ui/queen_name_01.png",
+      "x": 60,
+      "y": 100,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "char": "リ",
+      "path": "ui/queen_name_02.png",
+      "x": 104,
+      "y": 100,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "char": "ン",
+      "path": "ui/queen_name_03.png",
+      "x": 148,
+      "y": 100,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "char": "ク",
+      "path": "ui/queen_name_04.png",
+      "x": 192,
+      "y": 100,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "char": "イ",
+      "path": "ui/queen_name_05.png",
+      "x": 236,
+      "y": 100,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "char": "ー",
+      "path": "ui/queen_name_06.png",
+      "x": 280,
+      "y": 100,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "char": "ン",
+      "path": "ui/queen_name_07.png",
+      "x": 324,
+      "y": 100,
+      "width": 44,
+      "height": 44
+    }
+  ],
+  "stage_bgm": "BGM_STAGE03_C.mp3",
+  "boss_bgm": "BGM_BOSS.mp3",
+  "freeze": "combat inputs, enemy AI, map time during intro; pause freezes intro and audio under existing game policy",
+  "combat_and_boss_bgm_start": "same tick as title burst starts",
+  "first_combat_action": "use existing queen warp -> one action cycle",
+  "sign": "always show sky_station_sign",
+  "preview_title_start_ms": 2700,
+  "preview_burst_at_ms": 5820
+}

@@ -1,0 +1,11 @@
+﻿weapon_id,name,mika_damage,mika_uses,enemy_damage,enemy_uses,effect,stagger
+katana,刀,2,20,5,255,超高速で連続で斬りつけられる。コンボ無限。,弱
+war_axe,戦塵の斧,10,10,10,10,時間差範囲攻撃で全部巻き込む,大
+machinegun,マシンガン,1,50,2,255,超高速連打。,弱
+rocket_launcher,ロケットランチャー,20,3,20,3,超範囲攻撃ふっとばし,大
+yoichi_bow,よいちのゆみ,5,10,5,5,横直線貫通攻撃,弱
+flamethrower,火炎放射器,0.1秒で1,10秒,0.1秒で1,５秒,前方範囲照射,弱
+gungnir,グングニルのやり,10,20,5,5,前方貫通攻撃,弱
+battle_hammer,バトルハンマー,15,10,8,10,ふっとばし,大
+rocket_punch,ロケットパンチ,12,5,10,10,往復でダメージふっとばし,大
+wave_cannon,波動砲,100,1,50,1,画面全体アタック吹っ飛び,大
