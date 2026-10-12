@@ -177,7 +177,7 @@ class World {
     if (this.map.arrival_se_on_start && this.entry === 'stage_start') M.Audio.play(this.map.arrival_se_on_start);
     if (this.map.arrival_se && this.entry === 'map') M.Audio.play(this.map.arrival_se);   // 5面: エレベーターで着いた階   // 4Cから始めた時だけ（4Bからは到着演出がある）
     // BGM（隠し部屋は親マップの曲を続ける）
-    if (M.Audio.bgmLv != null && M.Audio.bgmLv !== 1) M.Audio.bgmLevel(1);   // 2026-10-12 v132 念のため: 前のマップでBGMを下げたままなら新しいマップで元に戻す
+    M.Audio.bgmLevel(1);   // 2026-10-12 v132 念のため: 前のマップでBGMを下げたまま（4Bのアナウンス・6面の放送・エレベーターなど）でも、新しいマップでは必ず元の音量に
     const song = this.map.music;
     if (song) {
       if (opts.firstEntry) M.Audio.playMusic('game_start', { loop: false, onEnd: () => { if (M.world && M.world.map.music === song && !M.world.bossIntro && !M.world.clearSeq) M.Audio.playMusic(song); } });
