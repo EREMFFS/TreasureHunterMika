@@ -448,6 +448,12 @@ const Audio_ = {
       for (const k in A.music) if (A.music[k]) this.load(k, A.music[k]);
     });
   },
+  // 2026-10-12 v132: BGMの音量の倍率（1＝元の音量）。Web Audio でも <audio>（file:// の曲）でも効く
+  bgmLevel(v) {
+    this.bgmLv = v;
+    if (this.bgmGain) this.bgmGain.gain.value = this.bgmVolume * v;
+    if (this.cur && this.cur.el) this.cur.el.volume = Math.max(0, Math.min(1, this.bgmVolume * (this.cur.fade == null ? 1 : this.cur.fade) * v));
+  },
   // 2026-10-12 大事な効果音を聞かせるため、BGMを一時的に下げる（k=倍率。ms後に元へ）
   duckBgm(k, ms) {
     const set = (v) => { if (this.bgmGain) this.bgmGain.gain.value = this.bgmVolume * v; if (this.cur && this.cur.el) this.cur.el.volume = this.bgmVolume * this.cur.fade * v; };

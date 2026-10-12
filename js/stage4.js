@@ -188,7 +188,7 @@ M.mapHooks['4B'] = {
     // アナウンス（全編を聞かせる）。BGMは声の間だけ下げる
     const v = M.Audio.play('announce');
     w.arrival.voice = v;
-    if (M.Audio.bgmGain) M.Audio.bgmGain.gain.value = M.Audio.bgmVolume * A.bgmDuck;
+    M.Audio.bgmLevel(A.bgmDuck);
   },
   update(w, dt) {
     const paused = M.game && M.game.paused;
@@ -224,6 +224,11 @@ M.mapHooks['4B'] = {
       S.voiceDone = true; S.restoreT = 0; S.t = Math.max(S.t, VOICE_END * 1000);
     }
     S.t += dt;
+    // 2026-10-12 v132 不具合修正: アナウンスが終わったら下げていたBGMを0.5秒で元に戻す（前は戻す処理がなく、4C・ボス戦まで小さいままだった）
+    if (S.restoreT != null && S.restoreT < A.bgmRestoreMs) {
+      S.restoreT = Math.min(A.bgmRestoreMs, S.restoreT + dt);
+      const k = S.restoreT / A.bgmRestoreMs; M.Audio.bgmLevel(A.bgmDuck + (1 - A.bgmDuck) * k);
+    }
     // 2026-10-12 v101: 完全に止まった時の音（train_halt）が鳴り終わってから暗転（前は止まって2秒後）
     if (S.voiceDone && S.cues.halt && S.t / 1000 >= VOICE_END + 50.65 + HALT_S + 0.2 && !isFinite(S.fadeStart)) S.fadeStart = S.t / 1000;
     const st = (S.st = sample(S.t / 1000, S.fadeStart));
